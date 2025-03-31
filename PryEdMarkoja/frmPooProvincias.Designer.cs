@@ -129,7 +129,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPooProvincias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmProvincias";
+            this.Text = "Provincias";
             this.Load += new System.EventHandler(this.frmProvincias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProvincias)).EndInit();
             this.ResumeLayout(false);
