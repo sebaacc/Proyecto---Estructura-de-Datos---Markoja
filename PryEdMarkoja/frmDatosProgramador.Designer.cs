@@ -39,6 +39,7 @@
             this.Name = "frmDatosProgramador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos del Programador";
+            this.Load += new System.EventHandler(this.frmDatosProgramador_Load);
             this.ResumeLayout(false);
 
         }

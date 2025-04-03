@@ -16,5 +16,10 @@ namespace PryEdMarkoja
         {
             InitializeComponent();
         }
+
+        private void frmDatosProgramador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
