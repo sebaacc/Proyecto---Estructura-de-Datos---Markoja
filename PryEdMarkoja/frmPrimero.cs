@@ -15,8 +15,12 @@ namespace PryEdMarkoja
         public frmPrimero()
         {
             InitializeComponent();
+            clsCustomUI.LoadLightPastelTheme(this);
         }
+        private void frmPrimero_Load(object sender, EventArgs e)
+        {
 
+        }
         private void datosDelProgramadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDatosProgramador v = new frmDatosProgramador();
@@ -38,6 +42,21 @@ namespace PryEdMarkoja
         {
             frmPooProvincias v = new frmPooProvincias();
             v.ShowDialog();
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
