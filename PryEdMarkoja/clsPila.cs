@@ -30,7 +30,10 @@ namespace PryEdMarkoja
                 Primero = Nuevo;
             }
         }
-
+        public void Eliminar()
+        {
+            Primero = Primero.Siguiente;
+        }
         public void Recorrer(DataGridView Grilla)
         {
             clsNodo aux = Primero;

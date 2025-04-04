@@ -24,15 +24,6 @@ D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEd
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.exe
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.pdb
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmPooProvincias.resources
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMar.619B7323.Up2Date
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\MaterialDesignColors.dll
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\Microsoft.Xaml.Behaviors.dll
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\MaterialDesignColors.pdb
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\Microsoft.Xaml.Behaviors.pdb
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\bin\Debug\Microsoft.Xaml.Behaviors.xml
 D:\Escritorio\markoja\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\bin\Debug\PryEdMarkoja.exe.config
 D:\Escritorio\markoja\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\bin\Debug\PryEdMarkoja.exe
 D:\Escritorio\markoja\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\bin\Debug\PryEdMarkoja.pdb
@@ -61,3 +52,5 @@ E:\Escritorio\markoja\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\
 E:\Escritorio\markoja\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.exe
 E:\Escritorio\markoja\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.pdb
 E:\Escritorio\markoja\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmPila.resources
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmCola.resources
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmPila.resources

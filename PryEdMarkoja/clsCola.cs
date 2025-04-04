@@ -65,7 +65,7 @@ namespace PryEdMarkoja
             
             AD.Close();
         }
-        public void Eliminar(clsNodo Nuevo)
+        public void Eliminar()
         {
             if (Primero == Ultimo)
             {
@@ -113,7 +113,7 @@ namespace PryEdMarkoja
         {
             clsNodo aux = Primero;
             StreamWriter AD = new StreamWriter("Cola.csv", false, Encoding.UTF8);
-            AD.WriteLine("Listadeespera\n");
+            AD.WriteLine("Lista de espera\n");
             AD.WriteLine("Codigo;Nombre;Tramite");
             while (aux != null)
             {

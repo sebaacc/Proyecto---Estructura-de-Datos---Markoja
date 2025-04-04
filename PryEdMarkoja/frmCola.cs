@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PryEdMarkoja.Estilos;
 
 namespace PryEdMarkoja
 {
@@ -15,9 +17,10 @@ namespace PryEdMarkoja
         public frmCola()
         {
             InitializeComponent();
+            clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
         clsCola FilaPersonas = new clsCola();
-
+        clsArchivo x = new clsArchivo();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             clsNodo Persona = new clsNodo();
@@ -45,6 +48,10 @@ namespace PryEdMarkoja
 
         private void frmCola_Load(object sender, EventArgs e)
         {
+            x.nombreArchivo = "Cola.csv";
+            if (File.Exists(x.nombreArchivo)) x.Recorrer(dgvCola);
+            else MessageBox.Show("Archivo no encontrado");
+
             FilaPersonas.Agregar();//lee datos archivo
             FilaPersonas.Recorrer();//grabo en archivo
             FilaPersonas.Recorrer(dgvCola);//muestra en 

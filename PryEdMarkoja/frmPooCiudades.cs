@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PryEdMarkoja.Estilos;
 
 namespace PryEdMarkoja
 {
@@ -15,7 +16,8 @@ namespace PryEdMarkoja
     {
         public frmPooCiudades()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
         clsArchivo x = new clsArchivo();
         clsUtilidadesFormularios utilidades = new clsUtilidadesFormularios();

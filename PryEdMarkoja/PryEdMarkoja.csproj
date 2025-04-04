@@ -55,12 +55,13 @@
   <ItemGroup>
     <Compile Include="clsArchivo.cs" />
     <Compile Include="clsCola.cs" />
-    <Compile Include="clsCustomUI.cs" />
-    <Compile Include="clsLightPastelMenuStripRenderer.cs" />
+    <Compile Include="Estilos\clsCustomUI.cs" />
+    <Compile Include="Estilos\clsLightPastelMenuStripRenderer.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
     <Compile Include="clsUtilidadesFormularios.cs" />
-    <Compile Include="clsDarkMenuStripRenderer.cs" />
+    <Compile Include="Estilos\clsDarkMenuStripRenderer.cs" />
+    <Compile Include="Estilos\clsTemaActual.cs" />
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>

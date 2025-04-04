@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PryEdMarkoja.Estilos;
 
 namespace PryEdMarkoja
 {
@@ -15,7 +16,8 @@ namespace PryEdMarkoja
         public frmPrimero()
         {
             InitializeComponent();
-            clsCustomUI.CargarEstilos(this, (clsCustomUI.Theme)Theme.LightPastel);
+            //clsCustomUI.CargarEstilos(this, (clsCustomUI.Theme)Theme.LightPastel);
+            clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
         public enum Theme { LightPastel, Dark }
         private void frmPrimero_Load(object sender, EventArgs e)
@@ -62,18 +64,24 @@ namespace PryEdMarkoja
 
         private void temaClaroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            clsCustomUI.CargarEstilos(this, (clsCustomUI.Theme)Theme.LightPastel);
+            TemaActual.TemaSeleccionado = clsCustomUI.Theme.LightPastel;
+            clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
-
         private void temaOscuroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            clsCustomUI.CargarEstilos(this, (clsCustomUI.Theme)Theme.Dark );
+            TemaActual.TemaSeleccionado = clsCustomUI.Theme.Dark;
+            clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
 
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCola v = new frmCola();
+            v.ShowDialog();
+        }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila v = new frmPila();
             v.ShowDialog();
         }
     }
