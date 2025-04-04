@@ -15,8 +15,9 @@ namespace PryEdMarkoja
         public frmPrimero()
         {
             InitializeComponent();
-            clsCustomUI.LoadLightPastelTheme(this);
+            clsCustomUI.CargarEstilos(this, (clsCustomUI.Theme)Theme.LightPastel);
         }
+        public enum Theme { LightPastel, Dark }
         private void frmPrimero_Load(object sender, EventArgs e)
         {
 
@@ -57,6 +58,23 @@ namespace PryEdMarkoja
         private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void temaClaroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clsCustomUI.CargarEstilos(this, (clsCustomUI.Theme)Theme.LightPastel);
+        }
+
+        private void temaOscuroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            clsCustomUI.CargarEstilos(this, (clsCustomUI.Theme)Theme.Dark );
+        }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCola v = new frmCola();
+            v.ShowDialog();
         }
     }
 }

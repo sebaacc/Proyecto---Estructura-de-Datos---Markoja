@@ -10,40 +10,71 @@ namespace PryEdMarkoja
 {
     public class clsCustomUI
     {
-        public static void CargarEstilos(Form actualForm)
+        public enum Theme { LightPastel, Dark }
+
+        public static void CargarEstilos(Form actualForm, Theme theme)
         {
+            switch (theme)
+            {
+                case Theme.LightPastel:
+                    AplicarEstiloPastel(actualForm);
+                    break;
+                case Theme.Dark:
+                    AplicarEstiloOscuro(actualForm);
+                    break;
+            }
+        }
+
+        private static void AplicarEstiloPastel(Form actualForm)
+        {
+            actualForm.BackColor = Color.FromArgb(227, 242, 253);
+            actualForm.ForeColor = Color.DarkSlateGray;
+            actualForm.FormBorderStyle = FormBorderStyle.FixedSingle;
+            actualForm.StartPosition = FormStartPosition.CenterScreen;
+
             foreach (Control control in actualForm.Controls)
             {
-                if (control is Button)
+                if (control is Button button)
                 {
-                    // Estilos para botones (puedes personalizarlos)
+                    button.BackColor = Color.FromArgb(179, 229, 252);
+                    button.ForeColor = Color.DarkSlateGray;
+                    button.FlatStyle = FlatStyle.Flat;
+                    button.FlatAppearance.BorderSize = 1;
+                    button.FlatAppearance.BorderColor = Color.FromArgb(144, 202, 249);
+                    button.MouseEnter += (s, e) => button.BackColor = Color.FromArgb(144, 202, 249);
+                    button.MouseLeave += (s, e) => button.BackColor = Color.FromArgb(179, 229, 252);
                 }
-                else if (control is CheckBox)
+                else if (control is TextBox textBox)
                 {
-                    // Estilos para CheckBox
+                    textBox.BackColor = Color.White;
+                    textBox.ForeColor = Color.DarkSlateGray;
+                    textBox.BorderStyle = BorderStyle.FixedSingle;
                 }
-                else if (control is RadioButton)
+                else if (control is ComboBox comboBox)
                 {
-                    // Estilos para RadioButton
+                    comboBox.BackColor = Color.White;
+                    comboBox.ForeColor = Color.DarkSlateGray;
+                    comboBox.FlatStyle = FlatStyle.Flat;
                 }
-                else if (control is TextBox)
+                else if (control is Label label || control is CheckBox checkBox || control is RadioButton radioButton)
                 {
-                    // Estilos para TextBox
+                    control.ForeColor = Color.DarkSlateGray;
                 }
-                else if (control is Label)
+                else if (control is MenuStrip menuStrip)
                 {
-                    ((Label)control).FlatStyle = FlatStyle.Flat;
-                    ((Label)control).ForeColor = Color.DarkSlateGray;
+                    menuStrip.BackColor = Color.FromArgb(200, 230, 250);
+                    menuStrip.ForeColor = Color.DarkSlateGray;
+                    menuStrip.RenderMode = ToolStripRenderMode.Professional;
+                    menuStrip.Renderer = new clsLightPastelMenuStripRenderer();
                 }
             }
         }
-        /*
-        public static void LoadDarkTheme(Form actualForm)
+
+        private static void AplicarEstiloOscuro(Form actualForm)
         {
-            // Aplicar estilo al formulario
-            actualForm.BackColor = Color.FromArgb(45, 45, 48); // Gris oscuro
+            actualForm.BackColor = Color.FromArgb(45, 45, 48);
             actualForm.ForeColor = Color.White;
-            actualForm.FormBorderStyle = FormBorderStyle.FixedSingle; // Evita el resizing
+            actualForm.FormBorderStyle = FormBorderStyle.FixedSingle;
             actualForm.StartPosition = FormStartPosition.CenterScreen;
 
             foreach (Control control in actualForm.Controls)
@@ -70,113 +101,17 @@ namespace PryEdMarkoja
                     comboBox.ForeColor = Color.White;
                     comboBox.FlatStyle = FlatStyle.Flat;
                 }
-                else if (control is Label label)
+                else if (control is Label label || control is CheckBox checkBox || control is RadioButton radioButton)
                 {
-                    label.ForeColor = Color.LightGray;
-                }
-                else if (control is CheckBox checkBox)
-                {
-                    checkBox.ForeColor = Color.LightGray;
-                }
-                else if (control is RadioButton radioButton)
-                {
-                    radioButton.ForeColor = Color.LightGray;
+                    control.ForeColor = Color.LightGray;
                 }
                 else if (control is MenuStrip menuStrip)
                 {
-                    menuStrip.BackColor = Color.FromArgb(58, 58, 60); // Fondo oscuro
+                    menuStrip.BackColor = Color.FromArgb(58, 58, 60);
                     menuStrip.ForeColor = Color.White;
                     menuStrip.RenderMode = ToolStripRenderMode.Professional;
-                    menuStrip.Renderer = new DarkMenuStripRenderer();
+                    menuStrip.Renderer = new clsDarkMenuStripRenderer();
                 }
-            }
-        }
-    }
-
-    // Personalización del MenuStrip
-    public class DarkMenuStripRenderer : ToolStripProfessionalRenderer
-    {
-        protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
-        {
-            if (e.Item.Selected)
-            {
-                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(80, 80, 85)), e.Item.ContentRectangle);
-            }
-            else
-            {
-                base.OnRenderMenuItemBackground(e);
-            }
-        }
-    }
-    */
-    //pasteles
-    public static void LoadLightPastelTheme(Form actualForm)
-    {
-            // Aplicar estilo al formulario
-            actualForm.BackColor = Color.FromArgb(227, 242, 253); // Celeste pastel
-            actualForm.ForeColor = Color.DarkSlateGray;
-            actualForm.FormBorderStyle = FormBorderStyle.FixedSingle;
-            actualForm.StartPosition = FormStartPosition.CenterScreen;
-
-            foreach (Control control in actualForm.Controls)
-            {
-                if (control is Button button)
-                {
-                    button.BackColor = Color.FromArgb(179, 229, 252); // Azul pastel
-                    button.ForeColor = Color.DarkSlateGray;
-                    button.FlatStyle = FlatStyle.Flat;
-                    button.FlatAppearance.BorderSize = 1;
-                    button.FlatAppearance.BorderColor = Color.FromArgb(144, 202, 249); // Azul más oscuro
-                    button.MouseEnter += (s, e) => button.BackColor = Color.FromArgb(144, 202, 249); // Hover
-                    button.MouseLeave += (s, e) => button.BackColor = Color.FromArgb(179, 229, 252);
-                }
-                else if (control is TextBox textBox)
-                {
-                    textBox.BackColor = Color.White;
-                    textBox.ForeColor = Color.DarkSlateGray;
-                    textBox.BorderStyle = BorderStyle.FixedSingle;
-                }
-                else if (control is ComboBox comboBox)
-                {
-                    comboBox.BackColor = Color.White;
-                    comboBox.ForeColor = Color.DarkSlateGray;
-                    comboBox.FlatStyle = FlatStyle.Flat;
-                }
-                else if (control is Label label)
-                {
-                    label.ForeColor = Color.DarkSlateGray;
-                }
-                else if (control is CheckBox checkBox)
-                {
-                    checkBox.ForeColor = Color.DarkSlateGray;
-                }
-                else if (control is RadioButton radioButton)
-                {
-                    radioButton.ForeColor = Color.DarkSlateGray;
-                }
-                else if (control is MenuStrip menuStrip)
-                {
-                    menuStrip.BackColor = Color.FromArgb(200, 230, 250); // Celeste pastel claro
-                    menuStrip.ForeColor = Color.DarkSlateGray;
-                    menuStrip.RenderMode = ToolStripRenderMode.Professional;
-                    menuStrip.Renderer = new LightPastelMenuStripRenderer();
-                }
-            }
-        }
-    }
-
-    // Personalización del MenuStrip para tema claro pastel
-    public class LightPastelMenuStripRenderer : ToolStripProfessionalRenderer
-    {
-        protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
-        {
-            if (e.Item.Selected)
-            {
-                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(144, 202, 249)), e.Item.ContentRectangle); // Azul pastel más oscuro
-            }
-            else
-            {
-                base.OnRenderMenuItemBackground(e);
             }
         }
     }
