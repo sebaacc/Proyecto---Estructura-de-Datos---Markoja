@@ -41,8 +41,7 @@ namespace PryEdMarkoja
                 lblCodigoCaja.Text = FilaPersonas.Primero.Codigo.ToString();
                 lblNombreCaja.Text = FilaPersonas.Primero.Nombre.ToString();
                 lblTramiteCaja.Text = FilaPersonas.Primero.Tramite.ToString();
-                //falta
-
+                FilaPersonas.Eliminar();
             }
         }
 

@@ -95,7 +95,7 @@ namespace PryEdMarkoja
             Lista.Items.Clear();
             while (aux != null)
             {
-                Lista.Items.Add(aux.Codigo);
+                Lista.Items.Add(aux.Codigo + " " + aux.Nombre + " " + aux.Tramite);
                 aux = aux.Siguiente;
             }
         }
@@ -105,7 +105,7 @@ namespace PryEdMarkoja
             ComboBox.Items.Clear();
             while (aux != null)
             {
-                ComboBox.Items.Add(aux.Codigo);
+                ComboBox.Items.Add(aux.Nombre);
                 aux = aux.Siguiente;
             }
         }
@@ -126,5 +126,23 @@ namespace PryEdMarkoja
             }
             AD.Close();
         }
+        public void Recorrer(String NombreArchivo)
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Código;Nombre;Trámite");
+            while (aux != null)
+            {
+                AD.Write(aux.Codigo);
+                AD.Write(";");
+                AD.Write(aux.Nombre);
+                AD.Write(";");
+                AD.WriteLine(aux.Tramite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+        }
+
     }
 }

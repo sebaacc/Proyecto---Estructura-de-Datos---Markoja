@@ -20,7 +20,7 @@ namespace PryEdMarkoja
         //métodos de la clase: agre, elim, recorrer.
         public void Agregar(clsNodo Nuevo)
         {
-            if (Primero != null)
+            if (Primero == null)
             {
                 Primero = Nuevo;
             }
@@ -30,9 +30,33 @@ namespace PryEdMarkoja
                 Primero = Nuevo;
             }
         }
+        public void Agregar()
+        {
+            StreamReader AD = new StreamReader("Pila.csv");
+            String dato = "";
+            dato = AD.ReadLine(); //Titulo
+            dato = AD.ReadLine(); //Reglon vacio
+            dato = AD.ReadLine(); //Titulos de columna
+            dato = AD.ReadLine(); //Primera fila con datos
+            while (dato != null) 
+            {
+                clsNodo Persona = new clsNodo();
+                String[] datos = dato.Split(';');
+                Persona.Codigo = Convert.ToInt32(datos[0]);
+                Persona.Nombre = datos[1];
+                Persona.Tramite = datos[2];
+                Agregar(Persona);
+                dato = AD.ReadLine();
+            }
+            AD.Close();
+        }
         public void Eliminar()
         {
-            Primero = Primero.Siguiente;
+            if (Primero != null)
+            {
+                Primero = Primero.Siguiente;
+            }
+
         }
         public void Recorrer(DataGridView Grilla)
         {
@@ -50,25 +74,26 @@ namespace PryEdMarkoja
             Lista.Items.Clear();
             while (aux != null)
             {
-                Lista.Items.Add(aux.Codigo);
+                Lista.Items.Add(aux.Codigo + " " + aux.Nombre + " " + aux.Tramite);
                 aux = aux.Siguiente;
             }
         }
+
         public void Recorrer(ComboBox ComboBox)
         {
             clsNodo aux = Primero;
             ComboBox.Items.Clear();
             while (aux != null)
             {
-                ComboBox.Items.Add(aux.Codigo);
+                ComboBox.Items.Add(aux.Nombre);
                 aux = aux.Siguiente;
             }
         }
         public void Recorrer() //para CSV
         {
             clsNodo aux = Primero;
-            StreamWriter AD = new StreamWriter("Cola.csv", false, Encoding.UTF8);
-            AD.WriteLine("Listadeespera\n");
+            StreamWriter AD = new StreamWriter("Pila.csv", false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
             AD.WriteLine("Codigo;Nombre;Tramite");
             while (aux != null)
             {
@@ -81,5 +106,23 @@ namespace PryEdMarkoja
             }
             AD.Close();
         }
+        public void Recorrer(String NombreArchivo)
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Código;Nombre;Trámite");
+            while (aux != null)
+            {
+                AD.Write(aux.Codigo);
+                AD.Write(";");
+                AD.Write(aux.Nombre);
+                AD.Write(";");
+                AD.WriteLine(aux.Tramite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+        }
+
     }
 }
