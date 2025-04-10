@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="clsArchivo.cs" />
     <Compile Include="clsCola.cs" />
+    <Compile Include="clsListaSimple.cs" />
     <Compile Include="Estilos\clsCustomUI.cs" />
     <Compile Include="Estilos\clsLightPastelMenuStripRenderer.cs" />
     <Compile Include="clsNodo.cs" />
