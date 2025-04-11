@@ -25,3 +25,6 @@ Existen listas simples y dobles, hoy vemos las listas simples.
 
 Agragamos los mismos métodos que en pila y cola, pero cambia la programación de la clase.
 TAREA: traer frmListaDoble hecha.
+
+## Clase 11.04  
+Hicimos una auto evaluación en forms. Mi resultado: [Resultado](https://docs.google.com/forms/d/e/1FAIpQLSdsa4sSuGaNZrgjJlZEL6OU5DBYf_bfqr1L1EQkTiGYTZYyBQ/viewscore?viewscore=AE0zAgB_jDRmOiCpCRr4JdLduR84USHV9jSfVO_DN6DB1cZRLyBPYqxsAsoRk3_ssFOmgNI)

@@ -12,6 +12,7 @@ namespace PryEdMarkoja
         private String nom; //nombre
         private String tra; //tramite
         private clsNodo sig; //siguiente / puntero.
+        private clsNodo ant; //siguiente / puntero.
 
         //Propiedades Nodo
 
@@ -37,6 +38,11 @@ namespace PryEdMarkoja
         {
             get { return sig; }
             set { sig = value; }
+        }
+        public clsNodo Anterior
+        {
+            get { return sig; }
+            set { ant = value; }
         }
 
     }
