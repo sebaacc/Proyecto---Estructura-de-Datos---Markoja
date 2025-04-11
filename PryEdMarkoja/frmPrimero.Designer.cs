@@ -46,13 +46,13 @@
             this.pilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.listaSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaDobleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructuraNoLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aspectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temaClaroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temaOscuroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDobleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -186,12 +186,6 @@
             this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.listaSimpleToolStripMenuItem.Text = "Lista Simple...";
             // 
-            // listaDobleToolStripMenuItem
-            // 
-            this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.listaDobleToolStripMenuItem.Text = "Lista Doble";
-            // 
             // estructuraNoLinealesToolStripMenuItem
             // 
             this.estructuraNoLinealesToolStripMenuItem.Name = "estructuraNoLinealesToolStripMenuItem";
@@ -246,6 +240,13 @@
             this.temaOscuroToolStripMenuItem.Text = "Tema Oscuro";
             this.temaOscuroToolStripMenuItem.Click += new System.EventHandler(this.temaOscuroToolStripMenuItem_Click);
             // 
+            // listaDobleToolStripMenuItem
+            // 
+            this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.listaDobleToolStripMenuItem.Text = "Lista Doble...";
+            this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
+            // 
             // frmPrimero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -253,7 +254,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrimero";
             this.Text = "Estructuras de Datos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
