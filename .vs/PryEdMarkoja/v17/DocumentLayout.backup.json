@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\",
+  "WorkspaceRootPath": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|d:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\clslistasimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\clslistasimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|d:\\seba\\weas\\documentso\\estudios\\ies\\semestre3\\estructuras\\proyectocursada\\pryedmarkoja\\pryedmarkoja\\frmlistadoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\frmlistadoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|d:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\clspila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\clspila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|d:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\frmprimero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\frmprimero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|d:\\seba\\weas\\documentso\\estudios\\ies\\semestre3\\estructuras\\proyectocursada\\pryedmarkoja\\pryedmarkoja\\frmpila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\frmpila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +18,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "clsPila.cs",
-              "DocumentMoniker": "D:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsPila.cs",
-              "RelativeDocumentMoniker": "PryEdMarkoja\\clsPila.cs",
-              "ToolTip": "D:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsPila.cs",
-              "RelativeToolTip": "PryEdMarkoja\\clsPila.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwHwAAAAJAAAA",
+              "Title": "frmPila.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\frmPila.cs",
+              "RelativeDocumentMoniker": "PryEdMarkoja\\frmPila.cs",
+              "ToolTip": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\frmPila.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PryEdMarkoja\\frmPila.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T14:40:43.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T03:21:54.498Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsListaSimple.cs",
-              "DocumentMoniker": "D:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsListaSimple.cs",
-              "RelativeDocumentMoniker": "PryEdMarkoja\\clsListaSimple.cs",
-              "ToolTip": "D:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsListaSimple.cs",
-              "RelativeToolTip": "PryEdMarkoja\\clsListaSimple.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAIwIAAAAAXAAAA",
+              "Title": "frmListaDoble.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\frmListaDoble.cs",
+              "RelativeDocumentMoniker": "PryEdMarkoja\\frmListaDoble.cs",
+              "ToolTip": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\frmListaDoble.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "PryEdMarkoja\\frmListaDoble.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T13:41:51.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmPrimero.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmPrimero.cs",
-              "RelativeDocumentMoniker": "PryEdMarkoja\\frmPrimero.cs",
-              "ToolTip": "D:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmPrimero.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PryEdMarkoja\\frmPrimero.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:33:12.831Z",
+              "WhenOpened": "2025-04-15T03:20:26.823Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

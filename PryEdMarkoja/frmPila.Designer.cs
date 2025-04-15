@@ -42,7 +42,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstPila = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblNombr = new System.Windows.Forms.Label();
             this.lblTramite = new System.Windows.Forms.Label();
@@ -51,11 +50,12 @@
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -67,7 +67,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.btnEliminar);
-            this.groupBox2.Location = new System.Drawing.Point(673, 57);
+            this.groupBox2.Location = new System.Drawing.Point(577, 39);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -154,7 +154,7 @@
             // 
             this.groupBox3.Controls.Add(this.dgvPila);
             this.groupBox3.Controls.Add(this.lstPila);
-            this.groupBox3.Location = new System.Drawing.Point(128, 281);
+            this.groupBox3.Location = new System.Drawing.Point(32, 263);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
@@ -208,16 +208,6 @@
             this.lstPila.Size = new System.Drawing.Size(233, 180);
             this.lstPila.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(128, 53);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 220);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblNombr);
@@ -227,7 +217,7 @@
             this.groupBox1.Controls.Add(this.txtTramite);
             this.groupBox1.Controls.Add(this.txtCodigo);
             this.groupBox1.Controls.Add(this.btnAgregar);
-            this.groupBox1.Location = new System.Drawing.Point(396, 53);
+            this.groupBox1.Location = new System.Drawing.Point(300, 35);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -301,26 +291,37 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(32, 35);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(243, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmPila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(874, 505);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPila";
-            this.Text = "frmPila";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Estructura de datos: Pila";
             this.Load += new System.EventHandler(this.frmPila_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,7 +342,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ListBox lstPila;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblNombr;
         private System.Windows.Forms.Label lblTramite;
@@ -350,5 +350,6 @@
         private System.Windows.Forms.TextBox txtTramite;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
