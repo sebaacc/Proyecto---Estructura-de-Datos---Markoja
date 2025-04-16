@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,14 +24,22 @@ namespace PryEdMarkoja
         clsArchivo x = new clsArchivo();
         private void frmPila_Load(object sender, EventArgs e)
         {
-            x.nombreArchivo = "Pila.csv";
-            if (File.Exists(x.nombreArchivo)) x.Recorrer(dgvPila);
-            else MessageBox.Show("Archivo no encontrado");
+            try
+            {
+                x.nombreArchivo = "Pila.csv";
+                if (File.Exists(x.nombreArchivo)) x.Recorrer(dgvPila);
+                else MessageBox.Show("Archivo no encontrado");
 
-            PilaDeCosas.Agregar();//lee datos archivo
-            PilaDeCosas.Recorrer();//grabo en archivo
-            PilaDeCosas.Recorrer(dgvPila);//muestra en 
-            PilaDeCosas.Recorrer(lstPila);//muestra en lista
+                PilaDeCosas.Agregar();//lee datos archivo
+                PilaDeCosas.Recorrer();//grabo en archivo
+                PilaDeCosas.Recorrer(dgvPila);//muestra en 
+                PilaDeCosas.Recorrer(lstPila);//muestra en lista
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+            
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

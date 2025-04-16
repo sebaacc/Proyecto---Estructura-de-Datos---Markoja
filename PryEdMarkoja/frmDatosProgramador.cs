@@ -23,5 +23,23 @@ namespace PryEdMarkoja
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                VisitLink();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to open link that was clicked. " + ex);
+            }
+        }
+        private void VisitLink()
+        {
+            linkLabel1.LinkVisited = true;
+           
+            System.Diagnostics.Process.Start("https://github.com/sebaacc");
+        }
     }
 }

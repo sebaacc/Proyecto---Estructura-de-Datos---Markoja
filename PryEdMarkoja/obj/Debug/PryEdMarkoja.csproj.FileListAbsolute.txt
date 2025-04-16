@@ -86,3 +86,5 @@ E:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\Pr
 E:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.exe
 E:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.pdb
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmListaDoble.resources
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmArbolBinario.resources
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmListaSimple.resources
