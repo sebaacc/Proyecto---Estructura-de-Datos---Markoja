@@ -29,9 +29,7 @@ namespace PryEdMarkoja
             Persona.Tramite = txtTramite.Text;
             FilaPersonas.Agregar(Persona);
 
-            FilaPersonas.Recorrer();
-            FilaPersonas.Recorrer(dgvCola);
-            FilaPersonas.Recorrer(lstCola);
+            limpiarTodo();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -43,6 +41,7 @@ namespace PryEdMarkoja
                 lblTramiteCaja.Text = FilaPersonas.Primero.Tramite.ToString();
                 FilaPersonas.Eliminar();
             }
+            limpiarTodo();
         }
 
         private void frmCola_Load(object sender, EventArgs e)
@@ -55,6 +54,26 @@ namespace PryEdMarkoja
             FilaPersonas.Recorrer();//grabo en archivo
             FilaPersonas.Recorrer(dgvCola);//muestra en 
             FilaPersonas.Recorrer(lstCola);//muestra en lista
+
+        }
+
+        private void lblCodigoCaja_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbElementoEliminar_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void limpiarTodo()
+        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+            FilaPersonas.Recorrer();
+            FilaPersonas.Recorrer(dgvCola);
+            FilaPersonas.Recorrer(lstCola);
         }
     }
 }

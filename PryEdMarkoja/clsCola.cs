@@ -75,7 +75,6 @@ namespace PryEdMarkoja
             else
             {
                 Primero = Primero.Siguiente;
-               
             }
         }
 

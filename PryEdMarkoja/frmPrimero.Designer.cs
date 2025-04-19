@@ -53,6 +53,10 @@
             this.aspectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temaClaroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temaOscuroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.árbolesBinariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
+            this.tablasHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grafosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,6 +200,11 @@
             // 
             // estructuraNoLinealesToolStripMenuItem
             // 
+            this.estructuraNoLinealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.árbolesBinariosToolStripMenuItem,
+            this.grafosToolStripMenuItem1,
+            this.toolStripMenuItem5,
+            this.tablasHashToolStripMenuItem});
             this.estructuraNoLinealesToolStripMenuItem.Name = "estructuraNoLinealesToolStripMenuItem";
             this.estructuraNoLinealesToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
             this.estructuraNoLinealesToolStripMenuItem.Text = "Estructura No Lineales";
@@ -248,6 +257,29 @@
             this.temaOscuroToolStripMenuItem.Text = "Tema Oscuro";
             this.temaOscuroToolStripMenuItem.Click += new System.EventHandler(this.temaOscuroToolStripMenuItem_Click);
             // 
+            // árbolesBinariosToolStripMenuItem
+            // 
+            this.árbolesBinariosToolStripMenuItem.Name = "árbolesBinariosToolStripMenuItem";
+            this.árbolesBinariosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.árbolesBinariosToolStripMenuItem.Text = "Árboles Binarios...";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(221, 6);
+            // 
+            // tablasHashToolStripMenuItem
+            // 
+            this.tablasHashToolStripMenuItem.Name = "tablasHashToolStripMenuItem";
+            this.tablasHashToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tablasHashToolStripMenuItem.Text = "Tablas Hash...";
+            // 
+            // grafosToolStripMenuItem1
+            // 
+            this.grafosToolStripMenuItem1.Name = "grafosToolStripMenuItem1";
+            this.grafosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.grafosToolStripMenuItem1.Text = "Grafos...";
+            // 
             // frmPrimero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -294,5 +326,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem listaSimpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDobleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem árbolesBinariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem grafosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem tablasHashToolStripMenuItem;
     }
 }

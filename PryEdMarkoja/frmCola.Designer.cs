@@ -28,22 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblTramiteCaja = new System.Windows.Forms.Label();
-            this.lblNombreCaja = new System.Windows.Forms.Label();
-            this.lblCodigoCaja = new System.Windows.Forms.Label();
+            this.gbElementoEliminar = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbMuestras = new System.Windows.Forms.GroupBox();
             this.dgvCola = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstCola = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbElementoNuevo = new System.Windows.Forms.GroupBox();
             this.lblNombr = new System.Windows.Forms.Label();
             this.lblTramite = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
@@ -51,63 +48,34 @@
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.lblTramiteCaja = new System.Windows.Forms.TextBox();
+            this.lblNombreCaja = new System.Windows.Forms.TextBox();
+            this.lblCodigoCaja = new System.Windows.Forms.TextBox();
+            this.gbElementoEliminar.SuspendLayout();
+            this.gbMuestras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gbElementoNuevo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox2
+            // gbElementoEliminar
             // 
-            this.groupBox2.Controls.Add(this.lblTramiteCaja);
-            this.groupBox2.Controls.Add(this.lblNombreCaja);
-            this.groupBox2.Controls.Add(this.lblCodigoCaja);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.btnEliminar);
-            this.groupBox2.Location = new System.Drawing.Point(583, 39);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(267, 224);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Elemento Eliminado ";
-            // 
-            // lblTramiteCaja
-            // 
-            this.lblTramiteCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblTramiteCaja.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTramiteCaja.Location = new System.Drawing.Point(108, 128);
-            this.lblTramiteCaja.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTramiteCaja.Name = "lblTramiteCaja";
-            this.lblTramiteCaja.Size = new System.Drawing.Size(133, 28);
-            this.lblTramiteCaja.TabIndex = 9;
-            this.lblTramiteCaja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNombreCaja
-            // 
-            this.lblNombreCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblNombreCaja.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblNombreCaja.Location = new System.Drawing.Point(108, 84);
-            this.lblNombreCaja.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombreCaja.Name = "lblNombreCaja";
-            this.lblNombreCaja.Size = new System.Drawing.Size(133, 28);
-            this.lblNombreCaja.TabIndex = 8;
-            this.lblNombreCaja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCodigoCaja
-            // 
-            this.lblCodigoCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblCodigoCaja.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCodigoCaja.Location = new System.Drawing.Point(108, 41);
-            this.lblCodigoCaja.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCodigoCaja.Name = "lblCodigoCaja";
-            this.lblCodigoCaja.Size = new System.Drawing.Size(133, 28);
-            this.lblCodigoCaja.TabIndex = 7;
-            this.lblCodigoCaja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gbElementoEliminar.Controls.Add(this.lblTramiteCaja);
+            this.gbElementoEliminar.Controls.Add(this.lblNombreCaja);
+            this.gbElementoEliminar.Controls.Add(this.lblCodigoCaja);
+            this.gbElementoEliminar.Controls.Add(this.label1);
+            this.gbElementoEliminar.Controls.Add(this.label2);
+            this.gbElementoEliminar.Controls.Add(this.label3);
+            this.gbElementoEliminar.Controls.Add(this.btnEliminar);
+            this.gbElementoEliminar.Location = new System.Drawing.Point(583, 39);
+            this.gbElementoEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.gbElementoEliminar.Name = "gbElementoEliminar";
+            this.gbElementoEliminar.Padding = new System.Windows.Forms.Padding(4);
+            this.gbElementoEliminar.Size = new System.Drawing.Size(267, 224);
+            this.gbElementoEliminar.TabIndex = 11;
+            this.gbElementoEliminar.TabStop = false;
+            this.gbElementoEliminar.Text = "Elemento Eliminado ";
+            this.gbElementoEliminar.Enter += new System.EventHandler(this.gbElementoEliminar_Enter);
             // 
             // label1
             // 
@@ -141,27 +109,27 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(28, 178);
+            this.btnEliminar.Location = new System.Drawing.Point(31, 178);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(200, 34);
+            this.btnEliminar.Size = new System.Drawing.Size(211, 34);
             this.btnEliminar.TabIndex = 0;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Text = "Eliminar ";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // groupBox3
+            // gbMuestras
             // 
-            this.groupBox3.Controls.Add(this.dgvCola);
-            this.groupBox3.Controls.Add(this.lstCola);
-            this.groupBox3.Location = new System.Drawing.Point(38, 267);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(809, 220);
-            this.groupBox3.TabIndex = 9;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Listado en una Lista y una Grilla";
+            this.gbMuestras.Controls.Add(this.dgvCola);
+            this.gbMuestras.Controls.Add(this.lstCola);
+            this.gbMuestras.Location = new System.Drawing.Point(38, 267);
+            this.gbMuestras.Margin = new System.Windows.Forms.Padding(4);
+            this.gbMuestras.Name = "gbMuestras";
+            this.gbMuestras.Padding = new System.Windows.Forms.Padding(4);
+            this.gbMuestras.Size = new System.Drawing.Size(812, 220);
+            this.gbMuestras.TabIndex = 9;
+            this.gbMuestras.TabStop = false;
+            this.gbMuestras.Text = "Listado en una Lista y una Grilla";
             // 
             // dgvCola
             // 
@@ -210,6 +178,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::PryEdMarkoja.Properties.Resources.representacionCola;
             this.pictureBox1.Location = new System.Drawing.Point(38, 39);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -218,23 +187,23 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBox1
+            // gbElementoNuevo
             // 
-            this.groupBox1.Controls.Add(this.lblNombr);
-            this.groupBox1.Controls.Add(this.lblTramite);
-            this.groupBox1.Controls.Add(this.lblCodigo);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.txtTramite);
-            this.groupBox1.Controls.Add(this.txtCodigo);
-            this.groupBox1.Controls.Add(this.btnAgregar);
-            this.groupBox1.Location = new System.Drawing.Point(306, 39);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(267, 220);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Nuevo Elemento";
+            this.gbElementoNuevo.Controls.Add(this.lblNombr);
+            this.gbElementoNuevo.Controls.Add(this.lblTramite);
+            this.gbElementoNuevo.Controls.Add(this.lblCodigo);
+            this.gbElementoNuevo.Controls.Add(this.txtNombre);
+            this.gbElementoNuevo.Controls.Add(this.txtTramite);
+            this.gbElementoNuevo.Controls.Add(this.txtCodigo);
+            this.gbElementoNuevo.Controls.Add(this.btnAgregar);
+            this.gbElementoNuevo.Location = new System.Drawing.Point(306, 39);
+            this.gbElementoNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.gbElementoNuevo.Name = "gbElementoNuevo";
+            this.gbElementoNuevo.Padding = new System.Windows.Forms.Padding(4);
+            this.gbElementoNuevo.Size = new System.Drawing.Size(267, 224);
+            this.gbElementoNuevo.TabIndex = 8;
+            this.gbElementoNuevo.TabStop = false;
+            this.gbElementoNuevo.Text = "Nuevo Elemento";
             // 
             // lblNombr
             // 
@@ -268,7 +237,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(108, 85);
+            this.txtNombre.Location = new System.Drawing.Point(108, 88);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 22);
@@ -292,64 +261,95 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(28, 178);
+            this.btnAgregar.Location = new System.Drawing.Point(31, 178);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(200, 34);
+            this.btnAgregar.Size = new System.Drawing.Size(209, 34);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // lblTramiteCaja
+            // 
+            this.lblTramiteCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblTramiteCaja.Location = new System.Drawing.Point(108, 132);
+            this.lblTramiteCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.lblTramiteCaja.Name = "lblTramiteCaja";
+            this.lblTramiteCaja.ReadOnly = true;
+            this.lblTramiteCaja.Size = new System.Drawing.Size(134, 22);
+            this.lblTramiteCaja.TabIndex = 11;
+            // 
+            // lblNombreCaja
+            // 
+            this.lblNombreCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblNombreCaja.Location = new System.Drawing.Point(108, 91);
+            this.lblNombreCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.lblNombreCaja.Name = "lblNombreCaja";
+            this.lblNombreCaja.ReadOnly = true;
+            this.lblNombreCaja.Size = new System.Drawing.Size(134, 22);
+            this.lblNombreCaja.TabIndex = 10;
+            // 
+            // lblCodigoCaja
+            // 
+            this.lblCodigoCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblCodigoCaja.Location = new System.Drawing.Point(108, 44);
+            this.lblCodigoCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.lblCodigoCaja.Name = "lblCodigoCaja";
+            this.lblCodigoCaja.ReadOnly = true;
+            this.lblCodigoCaja.Size = new System.Drawing.Size(134, 22);
+            this.lblCodigoCaja.TabIndex = 7;
+            this.lblCodigoCaja.TextChanged += new System.EventHandler(this.lblCodigoCaja_TextChanged);
             // 
             // frmCola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 554);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.gbElementoEliminar);
+            this.Controls.Add(this.gbMuestras);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbElementoNuevo);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura dinámica lineal: Cola";
             this.Load += new System.EventHandler(this.frmCola_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
+            this.gbElementoEliminar.ResumeLayout(false);
+            this.gbElementoEliminar.PerformLayout();
+            this.gbMuestras.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbElementoNuevo.ResumeLayout(false);
+            this.gbElementoNuevo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbElementoEliminar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbMuestras;
         private System.Windows.Forms.DataGridView dgvCola;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ListBox lstCola;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbElementoNuevo;
         private System.Windows.Forms.Label lblNombr;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtTramite;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Label lblTramiteCaja;
-        private System.Windows.Forms.Label lblNombreCaja;
-        private System.Windows.Forms.Label lblCodigoCaja;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox lblTramiteCaja;
+        private System.Windows.Forms.TextBox lblNombreCaja;
+        private System.Windows.Forms.TextBox lblCodigoCaja;
     }
 }

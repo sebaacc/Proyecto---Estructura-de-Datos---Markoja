@@ -171,13 +171,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\representacionCola.jpeg" />
+    <Content Include="Resources\representacionCola.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\representacionPila.jpeg" />
+    <Content Include="Resources\representacionPila.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fotoperfil2cercaCirculare.png" />
+    <Content Include="Resources\fotoperfil2cercaCirculare.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
