@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.gbListadoYGrilla = new System.Windows.Forms.GroupBox();
-            this.dgvListaDoble = new System.Windows.Forms.DataGridView();
+            this.dgvListaSimple = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lstLista = new System.Windows.Forms.ListBox();
+            this.lstListaSimple = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbElementoEliminar = new System.Windows.Forms.GroupBox();
             this.cmbEliminar = new System.Windows.Forms.ComboBox();
@@ -48,7 +48,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.gbListadoYGrilla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbElementoEliminar.SuspendLayout();
             this.gbNuevoElemento.SuspendLayout();
@@ -56,8 +56,8 @@
             // 
             // gbListadoYGrilla
             // 
-            this.gbListadoYGrilla.Controls.Add(this.dgvListaDoble);
-            this.gbListadoYGrilla.Controls.Add(this.lstLista);
+            this.gbListadoYGrilla.Controls.Add(this.dgvListaSimple);
+            this.gbListadoYGrilla.Controls.Add(this.lstListaSimple);
             this.gbListadoYGrilla.Location = new System.Drawing.Point(25, 221);
             this.gbListadoYGrilla.Name = "gbListadoYGrilla";
             this.gbListadoYGrilla.Size = new System.Drawing.Size(738, 317);
@@ -65,19 +65,19 @@
             this.gbListadoYGrilla.TabStop = false;
             this.gbListadoYGrilla.Text = "Listado en una Lista y una Grilla";
             // 
-            // dgvListaDoble
+            // dgvListaSimple
             // 
-            this.dgvListaDoble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaDoble.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListaSimple.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaSimple.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Nombre,
             this.Tramite});
-            this.dgvListaDoble.Location = new System.Drawing.Point(276, 22);
-            this.dgvListaDoble.Name = "dgvListaDoble";
-            this.dgvListaDoble.RowHeadersWidth = 51;
-            this.dgvListaDoble.RowTemplate.Height = 24;
-            this.dgvListaDoble.Size = new System.Drawing.Size(438, 276);
-            this.dgvListaDoble.TabIndex = 1;
+            this.dgvListaSimple.Location = new System.Drawing.Point(276, 22);
+            this.dgvListaSimple.Name = "dgvListaSimple";
+            this.dgvListaSimple.RowHeadersWidth = 51;
+            this.dgvListaSimple.RowTemplate.Height = 24;
+            this.dgvListaSimple.Size = new System.Drawing.Size(438, 276);
+            this.dgvListaSimple.TabIndex = 1;
             // 
             // Codigo
             // 
@@ -100,14 +100,14 @@
             this.Tramite.Name = "Tramite";
             this.Tramite.Width = 125;
             // 
-            // lstLista
+            // lstListaSimple
             // 
-            this.lstLista.FormattingEnabled = true;
-            this.lstLista.ItemHeight = 16;
-            this.lstLista.Location = new System.Drawing.Point(7, 22);
-            this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(236, 276);
-            this.lstLista.TabIndex = 0;
+            this.lstListaSimple.FormattingEnabled = true;
+            this.lstListaSimple.ItemHeight = 16;
+            this.lstListaSimple.Location = new System.Drawing.Point(7, 22);
+            this.lstListaSimple.Name = "lstListaSimple";
+            this.lstListaSimple.Size = new System.Drawing.Size(236, 276);
+            this.lstListaSimple.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -156,6 +156,7 @@
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // gbNuevoElemento
             // 
@@ -181,6 +182,7 @@
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtTramite
             // 
@@ -242,8 +244,9 @@
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de datos lineal: Lista Simple";
+            this.Load += new System.EventHandler(this.frmListaSimple_Load);
             this.gbListadoYGrilla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbElementoEliminar.ResumeLayout(false);
             this.gbElementoEliminar.PerformLayout();
@@ -256,11 +259,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbListadoYGrilla;
-        private System.Windows.Forms.DataGridView dgvListaDoble;
+        private System.Windows.Forms.DataGridView dgvListaSimple;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tramite;
-        private System.Windows.Forms.ListBox lstLista;
+        private System.Windows.Forms.ListBox lstListaSimple;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox gbElementoEliminar;
         private System.Windows.Forms.ComboBox cmbEliminar;
