@@ -59,11 +59,21 @@ namespace PryEdMarkoja
         {
             if (PilaDeCosas.Primero != null)
             {
-                lblCodigoCaja.Text = PilaDeCosas.Primero.Codigo.ToString();
-                lblNombreCaja.Text = PilaDeCosas.Primero.Nombre.ToString();
-                lblTramiteCaja.Text = PilaDeCosas.Primero.Tramite.ToString();
+                txtCodigoCaja.Text = PilaDeCosas.Primero.Codigo.ToString();
+                txtNombreCaja.Text = PilaDeCosas.Primero.Nombre.ToString();
+                txtTramiteCaja.Text = PilaDeCosas.Primero.Tramite.ToString();
                 PilaDeCosas.Eliminar();
             }
+            limpiarTodo();
+        }
+        private void limpiarTodo()
+        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+            PilaDeCosas.Recorrer();
+            PilaDeCosas.Recorrer(dgvPila);
+            PilaDeCosas.Recorrer(lstPila);
         }
     }
 }
