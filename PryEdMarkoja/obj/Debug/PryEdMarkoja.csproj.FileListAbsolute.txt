@@ -88,3 +88,6 @@ D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEd
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.csproj.CoreCompileInputs.cache
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.exe
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.pdb
+D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmArbolBinario.resources
+D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmListaDoble.resources
+D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmListaSimple.resources
