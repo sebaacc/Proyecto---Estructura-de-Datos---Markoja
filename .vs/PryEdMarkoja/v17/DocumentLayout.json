@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\",
+  "WorkspaceRootPath": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|d:\\seba\\weas\\documentso\\estudios\\ies\\semestre3\\estructuras\\proyectocursada\\pryedmarkoja\\pryedmarkoja\\clsarbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|e:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\frmarbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\frmarbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|e:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\clsarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\clsarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|e:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\frmarbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\frmarbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|e:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\clsarbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\clsarbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\pryedmarkoja\\clsnodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\clsnodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|e:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\clslistasimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\clslistasimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\pryedmarkoja\\clspila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\clspila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\pryedmarkoja\\frmlistasimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|e:\\escritorio\\proyecto---estructura-de-datos---markoja\\pryedmarkoja\\frmlistasimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4820C4C-B4EC-4856-B176-4CA08546B7C4}|PryEdMarkoja\\PryEdMarkoja.csproj|solutionrelative:pryedmarkoja\\frmlistasimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,68 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsArchivo.cs",
+              "DocumentMoniker": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsArchivo.cs",
+              "RelativeDocumentMoniker": "PryEdMarkoja\\clsArchivo.cs",
+              "ToolTip": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsArchivo.cs",
+              "RelativeToolTip": "PryEdMarkoja\\clsArchivo.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAmwEIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T11:58:08.581Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "clsPila.cs",
-              "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\clsPila.cs",
-              "RelativeDocumentMoniker": "PryEdMarkoja\\clsPila.cs",
-              "ToolTip": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\clsPila.cs",
-              "RelativeToolTip": "PryEdMarkoja\\clsPila.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Title": "frmArbolBinario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmArbolBinario.cs",
+              "RelativeDocumentMoniker": "PryEdMarkoja\\frmArbolBinario.cs",
+              "ToolTip": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmArbolBinario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PryEdMarkoja\\frmArbolBinario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T14:13:49.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmListaSimple.cs",
-              "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\frmListaSimple.cs",
-              "RelativeDocumentMoniker": "PryEdMarkoja\\frmListaSimple.cs",
-              "ToolTip": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\frmListaSimple.cs",
-              "RelativeToolTip": "PryEdMarkoja\\frmListaSimple.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACEAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T04:16:46.111Z"
+              "WhenOpened": "2025-04-25T11:55:03.931Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmArbolBinario.cs",
+              "DocumentMoniker": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmArbolBinario.cs",
+              "RelativeDocumentMoniker": "PryEdMarkoja\\frmArbolBinario.cs",
+              "ToolTip": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmArbolBinario.cs",
+              "RelativeToolTip": "PryEdMarkoja\\frmArbolBinario.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADgvywAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T11:52:04.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "clsArbolBinario.cs",
-              "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\clsArbolBinario.cs",
+              "DocumentMoniker": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsArbolBinario.cs",
               "RelativeDocumentMoniker": "PryEdMarkoja\\clsArbolBinario.cs",
-              "ToolTip": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\clsArbolBinario.cs",
+              "ToolTip": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsArbolBinario.cs",
               "RelativeToolTip": "PryEdMarkoja\\clsArbolBinario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAUwDUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T13:58:48.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsNodo.cs",
-              "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\clsNodo.cs",
-              "RelativeDocumentMoniker": "PryEdMarkoja\\clsNodo.cs",
-              "ToolTip": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\estructuras\\ProyectoCursada\\PryEdMarkoja\\PryEdMarkoja\\clsNodo.cs",
-              "RelativeToolTip": "PryEdMarkoja\\clsNodo.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAwwC0AAAAJAAAA",
+              "DocumentIndex": 4,
+              "Title": "clsListaSimple.cs",
+              "DocumentMoniker": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsListaSimple.cs",
+              "RelativeDocumentMoniker": "PryEdMarkoja\\clsListaSimple.cs",
+              "ToolTip": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\clsListaSimple.cs",
+              "RelativeToolTip": "PryEdMarkoja\\clsListaSimple.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAIwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T14:14:10.109Z"
+              "WhenOpened": "2025-04-25T12:19:52.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmListaSimple.cs",
+              "DocumentMoniker": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmListaSimple.cs",
+              "RelativeDocumentMoniker": "PryEdMarkoja\\frmListaSimple.cs",
+              "ToolTip": "E:\\Escritorio\\Proyecto---Estructura-de-Datos---Markoja\\PryEdMarkoja\\frmListaSimple.cs",
+              "RelativeToolTip": "PryEdMarkoja\\frmListaSimple.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T11:51:50.179Z",
+              "EditorCaption": ""
             }
           ]
         }

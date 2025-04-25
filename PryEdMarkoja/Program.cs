@@ -16,7 +16,7 @@ namespace PryEdMarkoja
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrimero());
+            Application.Run(new frmInicio());
         }
     }
 }

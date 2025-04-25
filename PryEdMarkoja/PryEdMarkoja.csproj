@@ -107,11 +107,11 @@
     <Compile Include="frmDatosProgramador.Designer.cs">
       <DependentUpon>frmDatosProgramador.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrimero.cs">
+    <Compile Include="frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrimero.Designer.cs">
-      <DependentUpon>frmPrimero.cs</DependentUpon>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPooProvincias.cs">
       <SubType>Form</SubType>
@@ -142,8 +142,8 @@
     <EmbeddedResource Include="frmDatosProgramador.resx">
       <DependentUpon>frmDatosProgramador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrimero.resx">
-      <DependentUpon>frmPrimero.cs</DependentUpon>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPooProvincias.resx">
       <DependentUpon>frmPooProvincias.cs</DependentUpon>
