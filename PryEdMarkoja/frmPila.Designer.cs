@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPila));
             this.gbElementoEliminar = new System.Windows.Forms.GroupBox();
+            this.txtTramiteCaja = new System.Windows.Forms.TextBox();
+            this.txtNombreCaja = new System.Windows.Forms.TextBox();
+            this.txtCodigoCaja = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,9 +52,6 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtTramiteCaja = new System.Windows.Forms.TextBox();
-            this.txtNombreCaja = new System.Windows.Forms.TextBox();
-            this.txtCodigoCaja = new System.Windows.Forms.TextBox();
             this.gbElementoEliminar.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).BeginInit();
@@ -76,6 +76,39 @@
             this.gbElementoEliminar.TabIndex = 15;
             this.gbElementoEliminar.TabStop = false;
             this.gbElementoEliminar.Text = "Elemento Eliminado ";
+            // 
+            // txtTramiteCaja
+            // 
+            this.txtTramiteCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtTramiteCaja.Enabled = false;
+            this.txtTramiteCaja.Location = new System.Drawing.Point(108, 132);
+            this.txtTramiteCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTramiteCaja.Name = "txtTramiteCaja";
+            this.txtTramiteCaja.ReadOnly = true;
+            this.txtTramiteCaja.Size = new System.Drawing.Size(134, 22);
+            this.txtTramiteCaja.TabIndex = 14;
+            // 
+            // txtNombreCaja
+            // 
+            this.txtNombreCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtNombreCaja.Enabled = false;
+            this.txtNombreCaja.Location = new System.Drawing.Point(108, 91);
+            this.txtNombreCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreCaja.Name = "txtNombreCaja";
+            this.txtNombreCaja.ReadOnly = true;
+            this.txtNombreCaja.Size = new System.Drawing.Size(134, 22);
+            this.txtNombreCaja.TabIndex = 13;
+            // 
+            // txtCodigoCaja
+            // 
+            this.txtCodigoCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtCodigoCaja.Enabled = false;
+            this.txtCodigoCaja.Location = new System.Drawing.Point(108, 44);
+            this.txtCodigoCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigoCaja.Name = "txtCodigoCaja";
+            this.txtCodigoCaja.ReadOnly = true;
+            this.txtCodigoCaja.Size = new System.Drawing.Size(134, 22);
+            this.txtCodigoCaja.TabIndex = 12;
             // 
             // label1
             // 
@@ -269,36 +302,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtTramiteCaja
-            // 
-            this.txtTramiteCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtTramiteCaja.Location = new System.Drawing.Point(108, 132);
-            this.txtTramiteCaja.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTramiteCaja.Name = "txtTramiteCaja";
-            this.txtTramiteCaja.ReadOnly = true;
-            this.txtTramiteCaja.Size = new System.Drawing.Size(134, 22);
-            this.txtTramiteCaja.TabIndex = 14;
-            // 
-            // txtNombreCaja
-            // 
-            this.txtNombreCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtNombreCaja.Location = new System.Drawing.Point(108, 91);
-            this.txtNombreCaja.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreCaja.Name = "txtNombreCaja";
-            this.txtNombreCaja.ReadOnly = true;
-            this.txtNombreCaja.Size = new System.Drawing.Size(134, 22);
-            this.txtNombreCaja.TabIndex = 13;
-            // 
-            // txtCodigoCaja
-            // 
-            this.txtCodigoCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtCodigoCaja.Location = new System.Drawing.Point(108, 44);
-            this.txtCodigoCaja.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCodigoCaja.Name = "txtCodigoCaja";
-            this.txtCodigoCaja.ReadOnly = true;
-            this.txtCodigoCaja.Size = new System.Drawing.Size(134, 22);
-            this.txtCodigoCaja.TabIndex = 12;
             // 
             // frmPila
             // 

@@ -19,7 +19,7 @@ namespace PryEdMarkoja
             InitializeComponent();
             clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
-        clsListaSimple ListaPersonas = new clsListaSimple();
+        clsListaSimple ListaSimple = new clsListaSimple();
         clsArchivo x = new clsArchivo();
         private void frmListaSimple_Load(object sender, EventArgs e)
         {
@@ -27,11 +27,8 @@ namespace PryEdMarkoja
             if (File.Exists(x.nombreArchivo)) x.Recorrer(dgvListaSimple);
             else MessageBox.Show("Archivo no encontrado");
 
-            ListaPersonas.Agregar();
-            ListaPersonas.Recorrer();
-            ListaPersonas.Recorrer(cmbEliminar);
-            ListaPersonas.Recorrer(dgvListaSimple);
-            ListaPersonas.Recorrer(lstListaSimple);
+            ListaSimple.Agregar();
+            LosRecorrer();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -41,11 +38,8 @@ namespace PryEdMarkoja
             Persona.Nombre = txtNombre.Text;
             Persona.Tramite = txtTramite.Text;
 
-            ListaPersonas.Agregar(Persona);
-            ListaPersonas.Recorrer();
-            ListaPersonas.Recorrer(cmbEliminar);
-            ListaPersonas.Recorrer(dgvListaSimple);
-            ListaPersonas.Recorrer(lstListaSimple);
+            ListaSimple.Agregar(Persona);
+            LosRecorrer();
             limpiarTodo();
         }
         private void limpiarTodo()
@@ -54,9 +48,7 @@ namespace PryEdMarkoja
             txtNombre.Text = "";
             txtTramite.Text = "";
             cmbEliminar.Text = "";
-            ListaPersonas.Recorrer();
-            ListaPersonas.Recorrer(dgvListaSimple);
-            ListaPersonas.Recorrer(lstListaSimple);
+            LosRecorrer();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -65,7 +57,7 @@ namespace PryEdMarkoja
             {
                 try
                 {
-                    ListaPersonas.Eliminar(Convert.ToInt32(cmbEliminar.SelectedItem));
+                    ListaSimple.Eliminar(Convert.ToInt32(cmbEliminar.SelectedItem));
                     MessageBox.Show("Se eliminó correctamente.");
                 } catch (Exception ex)
                 {
@@ -77,6 +69,13 @@ namespace PryEdMarkoja
                 MessageBox.Show("No se ha seleccionado ningún valor a eliminar.");
             }
             limpiarTodo();
+        }
+        private void LosRecorrer()
+        {
+            ListaSimple.Recorrer();
+            ListaSimple.Recorrer(cmbEliminar);
+            ListaSimple.Recorrer(dgvListaSimple);
+            ListaSimple.Recorrer(lstListaSimple);
         }
     }
 }

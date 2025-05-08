@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,29 @@ namespace PryEdMarkoja
             }
             return Aux;
         }
+        //public void Agregar()
+        //{
+        //    StreamReader AD = new StreamReader("Arbol.csv");
+        //    String dato = "";
+        //    dato = AD.ReadLine();
+        //    dato = AD.ReadLine();
+        //    dato = AD.ReadLine();
+        //    dato = AD.ReadLine();
+        //    while (dato != null)
+        //    {
+        //        clsNodo nodo = new clsNodo();
+
+        //        String[] datos = dato.Split(';');
+
+        //        nodo.Codigo = Convert.ToInt32(datos[0]);
+        //        nodo.Nombre = datos[1];
+        //        nodo.Tramite = datos[2];
+
+        //        Agregar(nodo);
+        //        dato = AD.ReadLine();
+        //    }
+        //    AD.Close();
+        //}
         public void Agregar(clsNodo Nvo)
         {
             Nvo.Izquierdo = null;
@@ -54,6 +78,42 @@ namespace PryEdMarkoja
             Lista.Items.Clear();
             InOrdenAsc(Lista, Raiz);
         }
+        
+        public void Recorrer(ListBox Lista)
+        {
+            Lista.Items.Clear();
+            InOrdenAsc(Lista, Raiz);
+        }
+       
+        public void Recorrer(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            InOrdenAsc(Grilla, Raiz);
+        }
+        public void Recorrer(TreeView tree)
+        {
+            tree.Nodes.Clear();
+            TreeNode NodoPadre = new TreeNode("Árbol");
+            tree.Nodes.Add(NodoPadre);
+            PreOrden(Raiz, NodoPadre);
+            tree.ExpandAll();
+        }
+        public void RecorrerPre(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PreOrden(Grilla, Raiz);
+        }
+        public void RecorrerPost(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PostOrden(Grilla, Raiz);
+        }
+        private void InOrdenAsc(DataGridView Dgv, clsNodo R)
+        {
+            if (R.Izquierdo != null) InOrdenAsc(Dgv, R.Izquierdo);
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            if (R.Derecho != null) InOrdenAsc(Dgv, R.Derecho);
+        }
         private void InOrdenAsc(ComboBox Lst, clsNodo R)
         {
             if (R.Izquierdo != null)
@@ -66,28 +126,11 @@ namespace PryEdMarkoja
                 InOrdenAsc(Lst, R.Derecho);
             }
         }
-
-        public void Recorrer(ListBox Lista)
-        {
-            Lista.Items.Clear();
-            InOrdenAsc(Lista, Raiz);
-        }
         private void InOrdenAsc(ListBox Lst, clsNodo R)
         {
             if (R.Izquierdo != null) InOrdenAsc(Lst, R.Izquierdo);
             Lst.Items.Add(R.Codigo);
             if (R.Derecho != null) InOrdenAsc(Lst, R.Derecho);
-        }
-        public void Recorrer(DataGridView Grilla)
-        {
-            Grilla.Rows.Clear();
-            InOrdenAsc(Grilla, Raiz);
-        }
-        private void InOrdenAsc(DataGridView Dgv, clsNodo R)
-        {
-            if (R.Izquierdo != null) InOrdenAsc(Dgv, R.Izquierdo); 
-            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
-            if (R.Derecho != null) InOrdenAsc(Dgv, R.Derecho);
         }
         public void InOrdenDesc(ListBox Lst, clsNodo R)
         {
@@ -101,42 +144,35 @@ namespace PryEdMarkoja
                 InOrdenDesc(Lst, R.Izquierdo);
             }
         }
-        public void PreOrden(ListBox Lst, clsNodo R)
+        public void PreOrden(DataGridView Grilla, clsNodo R)
         {
-            Lst.Items.Add(R.Codigo);
+            Grilla.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
             if (R.Izquierdo != null)
             {
-                PreOrden(Lst, R.Izquierdo);
+                PreOrden(Grilla, R.Izquierdo);
             }
             if (R.Derecho != null)
             {
-                PreOrden(Lst, R.Derecho);
+                PreOrden(Grilla, R.Derecho);
             }
         }
-        public void PostOrden(ListBox Lst, clsNodo R)
+        public void PostOrden(DataGridView Grilla, clsNodo R)
         {
             if (R.Izquierdo != null)
             {
-                PostOrden(Lst, R.Izquierdo);
+                PostOrden(Grilla, R.Izquierdo);
             }
             if (R.Derecho != null)
             {
-                PostOrden(Lst, R.Derecho);
+                PostOrden(Grilla, R.Derecho);
             }
-            Lst.Items.Add(R.Codigo);
+            Grilla.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
         }
-        public void Recorrer(TreeView tree)
-        {
-            tree.Nodes.Clear();
-            TreeNode NodoPadre = new TreeNode("Árbol");
-            tree.Nodes.Add(NodoPadre);
-            PreOrden(Raiz, NodoPadre);
-            tree.ExpandAll();
-        }
+
 
         private void PreOrden(clsNodo R, TreeNode nodoTreeView)
         {
-            TreeNode NodoPadre = new TreeNode(R.Codigo.ToString()); 
+            TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
             nodoTreeView.Nodes.Add(NodoPadre);
             if (R.Izquierdo != null) PreOrden(R.Izquierdo, NodoPadre);
             if (R.Derecho != null) PreOrden(R.Derecho, NodoPadre);
@@ -151,13 +187,6 @@ namespace PryEdMarkoja
             Raiz = null;
             EquilibrarArbol(0, i - 1);
         }
-        public void Eliminar(Int32 codigo)
-        {
-            i = 0;
-            GrabarVectorInOrden(Raiz, codigo);
-            Raiz = null;
-            EquilibrarArbol(0, i - 1);
-        }
         private void EquilibrarArbol(Int32 ini, Int32 fin)
         {
             Int32 m = (ini + fin) / 2;
@@ -167,6 +196,13 @@ namespace PryEdMarkoja
                 EquilibrarArbol(ini, m - 1);
                 EquilibrarArbol(m + 1, fin);
             }
+        }
+        public void Eliminar(Int32 codigo)
+        {
+            i = 0;
+            GrabarVectorInOrden(Raiz, codigo);
+            Raiz = null;
+            EquilibrarArbol(0, i - 1);
         }
         private void GrabarVectorInOrden(clsNodo NodoPadre)
         {

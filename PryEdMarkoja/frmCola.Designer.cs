@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.gbElementoEliminar = new System.Windows.Forms.GroupBox();
+            this.lblTramiteCaja = new System.Windows.Forms.TextBox();
+            this.lblNombreCaja = new System.Windows.Forms.TextBox();
+            this.lblCodigoCaja = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,9 +51,6 @@
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.lblTramiteCaja = new System.Windows.Forms.TextBox();
-            this.lblNombreCaja = new System.Windows.Forms.TextBox();
-            this.lblCodigoCaja = new System.Windows.Forms.TextBox();
             this.gbElementoEliminar.SuspendLayout();
             this.gbMuestras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
@@ -76,6 +76,40 @@
             this.gbElementoEliminar.TabStop = false;
             this.gbElementoEliminar.Text = "Elemento Eliminado ";
             this.gbElementoEliminar.Enter += new System.EventHandler(this.gbElementoEliminar_Enter);
+            // 
+            // lblTramiteCaja
+            // 
+            this.lblTramiteCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblTramiteCaja.Enabled = false;
+            this.lblTramiteCaja.Location = new System.Drawing.Point(108, 132);
+            this.lblTramiteCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.lblTramiteCaja.Name = "lblTramiteCaja";
+            this.lblTramiteCaja.ReadOnly = true;
+            this.lblTramiteCaja.Size = new System.Drawing.Size(134, 22);
+            this.lblTramiteCaja.TabIndex = 11;
+            // 
+            // lblNombreCaja
+            // 
+            this.lblNombreCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblNombreCaja.Enabled = false;
+            this.lblNombreCaja.Location = new System.Drawing.Point(108, 91);
+            this.lblNombreCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.lblNombreCaja.Name = "lblNombreCaja";
+            this.lblNombreCaja.ReadOnly = true;
+            this.lblNombreCaja.Size = new System.Drawing.Size(134, 22);
+            this.lblNombreCaja.TabIndex = 10;
+            // 
+            // lblCodigoCaja
+            // 
+            this.lblCodigoCaja.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblCodigoCaja.Enabled = false;
+            this.lblCodigoCaja.Location = new System.Drawing.Point(108, 44);
+            this.lblCodigoCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.lblCodigoCaja.Name = "lblCodigoCaja";
+            this.lblCodigoCaja.ReadOnly = true;
+            this.lblCodigoCaja.Size = new System.Drawing.Size(134, 22);
+            this.lblCodigoCaja.TabIndex = 7;
+            this.lblCodigoCaja.TextChanged += new System.EventHandler(this.lblCodigoCaja_TextChanged);
             // 
             // label1
             // 
@@ -269,37 +303,6 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // lblTramiteCaja
-            // 
-            this.lblTramiteCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblTramiteCaja.Location = new System.Drawing.Point(108, 132);
-            this.lblTramiteCaja.Margin = new System.Windows.Forms.Padding(4);
-            this.lblTramiteCaja.Name = "lblTramiteCaja";
-            this.lblTramiteCaja.ReadOnly = true;
-            this.lblTramiteCaja.Size = new System.Drawing.Size(134, 22);
-            this.lblTramiteCaja.TabIndex = 11;
-            // 
-            // lblNombreCaja
-            // 
-            this.lblNombreCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblNombreCaja.Location = new System.Drawing.Point(108, 91);
-            this.lblNombreCaja.Margin = new System.Windows.Forms.Padding(4);
-            this.lblNombreCaja.Name = "lblNombreCaja";
-            this.lblNombreCaja.ReadOnly = true;
-            this.lblNombreCaja.Size = new System.Drawing.Size(134, 22);
-            this.lblNombreCaja.TabIndex = 10;
-            // 
-            // lblCodigoCaja
-            // 
-            this.lblCodigoCaja.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblCodigoCaja.Location = new System.Drawing.Point(108, 44);
-            this.lblCodigoCaja.Margin = new System.Windows.Forms.Padding(4);
-            this.lblCodigoCaja.Name = "lblCodigoCaja";
-            this.lblCodigoCaja.ReadOnly = true;
-            this.lblCodigoCaja.Size = new System.Drawing.Size(134, 22);
-            this.lblCodigoCaja.TabIndex = 7;
-            this.lblCodigoCaja.TextChanged += new System.EventHandler(this.lblCodigoCaja_TextChanged);
             // 
             // frmCola
             // 

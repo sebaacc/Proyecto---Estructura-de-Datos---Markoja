@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.txtTramite = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.lblTramite = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.gbElementoEliminar = new System.Windows.Forms.GroupBox();
+            this.cmbEliminar = new System.Windows.Forms.ComboBox();
+            this.lblCodigoElim = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.gbListarDatos = new System.Windows.Forms.GroupBox();
+            this.optDesc = new System.Windows.Forms.RadioButton();
+            this.optAsc = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbListadoYGrilla = new System.Windows.Forms.GroupBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblTramite = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtTramite = new System.Windows.Forms.TextBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.lblCodigoElim = new System.Windows.Forms.Label();
-            this.cmbEliminar = new System.Windows.Forms.ComboBox();
-            this.optAsc = new System.Windows.Forms.RadioButton();
-            this.optDesc = new System.Windows.Forms.RadioButton();
-            this.lstLista = new System.Windows.Forms.ListBox();
             this.dgvListaDoble = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lstLista = new System.Windows.Forms.ListBox();
             this.gbNuevoElemento.SuspendLayout();
             this.gbElementoEliminar.SuspendLayout();
             this.gbListarDatos.SuspendLayout();
@@ -74,6 +74,64 @@
             this.gbNuevoElemento.TabStop = false;
             this.gbNuevoElemento.Text = "Nuevo Elemento";
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(9, 135);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(202, 37);
+            this.btnAgregar.TabIndex = 6;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // txtTramite
+            // 
+            this.txtTramite.Location = new System.Drawing.Point(73, 101);
+            this.txtTramite.Name = "txtTramite";
+            this.txtTramite.Size = new System.Drawing.Size(138, 22);
+            this.txtTramite.TabIndex = 5;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(73, 64);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(138, 22);
+            this.txtNombre.TabIndex = 4;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(73, 27);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(138, 22);
+            this.txtCodigo.TabIndex = 3;
+            // 
+            // lblTramite
+            // 
+            this.lblTramite.AutoSize = true;
+            this.lblTramite.Location = new System.Drawing.Point(6, 104);
+            this.lblTramite.Name = "lblTramite";
+            this.lblTramite.Size = new System.Drawing.Size(56, 16);
+            this.lblTramite.TabIndex = 2;
+            this.lblTramite.Text = "Trámite:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(6, 64);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(6, 27);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
+            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.Text = "Código:";
+            // 
             // gbElementoEliminar
             // 
             this.gbElementoEliminar.Controls.Add(this.cmbEliminar);
@@ -86,6 +144,34 @@
             this.gbElementoEliminar.TabStop = false;
             this.gbElementoEliminar.Text = "Elemento a Eliminar";
             // 
+            // cmbEliminar
+            // 
+            this.cmbEliminar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEliminar.FormattingEnabled = true;
+            this.cmbEliminar.Location = new System.Drawing.Point(79, 27);
+            this.cmbEliminar.Name = "cmbEliminar";
+            this.cmbEliminar.Size = new System.Drawing.Size(121, 24);
+            this.cmbEliminar.TabIndex = 9;
+            // 
+            // lblCodigoElim
+            // 
+            this.lblCodigoElim.AutoSize = true;
+            this.lblCodigoElim.Location = new System.Drawing.Point(19, 27);
+            this.lblCodigoElim.Name = "lblCodigoElim";
+            this.lblCodigoElim.Size = new System.Drawing.Size(54, 16);
+            this.lblCodigoElim.TabIndex = 8;
+            this.lblCodigoElim.Text = "Código:";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(22, 64);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(178, 36);
+            this.btnEliminar.TabIndex = 7;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // gbListarDatos
             // 
             this.gbListarDatos.Controls.Add(this.optDesc);
@@ -96,6 +182,28 @@
             this.gbListarDatos.TabIndex = 2;
             this.gbListarDatos.TabStop = false;
             this.gbListarDatos.Text = "Listar Datos";
+            // 
+            // optDesc
+            // 
+            this.optDesc.AutoSize = true;
+            this.optDesc.Location = new System.Drawing.Point(22, 40);
+            this.optDesc.Name = "optDesc";
+            this.optDesc.Size = new System.Drawing.Size(109, 20);
+            this.optDesc.TabIndex = 1;
+            this.optDesc.TabStop = true;
+            this.optDesc.Text = "Descendente";
+            this.optDesc.UseVisualStyleBackColor = true;
+            // 
+            // optAsc
+            // 
+            this.optAsc.AutoSize = true;
+            this.optAsc.Location = new System.Drawing.Point(22, 18);
+            this.optAsc.Name = "optAsc";
+            this.optAsc.Size = new System.Drawing.Size(100, 20);
+            this.optAsc.TabIndex = 0;
+            this.optAsc.TabStop = true;
+            this.optAsc.Text = "Ascendente";
+            this.optAsc.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -118,120 +226,6 @@
             this.gbListadoYGrilla.TabStop = false;
             this.gbListadoYGrilla.Text = "Listado en una Lista y una Grilla";
             // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(6, 27);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Código:";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(6, 64);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "Nombre:";
-            // 
-            // lblTramite
-            // 
-            this.lblTramite.AutoSize = true;
-            this.lblTramite.Location = new System.Drawing.Point(6, 104);
-            this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(56, 16);
-            this.lblTramite.TabIndex = 2;
-            this.lblTramite.Text = "Trámite:";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(73, 27);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(138, 22);
-            this.txtCodigo.TabIndex = 3;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(73, 64);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(138, 22);
-            this.txtNombre.TabIndex = 4;
-            // 
-            // txtTramite
-            // 
-            this.txtTramite.Location = new System.Drawing.Point(73, 101);
-            this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(138, 22);
-            this.txtTramite.TabIndex = 5;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(9, 135);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(202, 37);
-            this.btnAgregar.TabIndex = 6;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(22, 64);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(178, 36);
-            this.btnEliminar.TabIndex = 7;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // lblCodigoElim
-            // 
-            this.lblCodigoElim.AutoSize = true;
-            this.lblCodigoElim.Location = new System.Drawing.Point(19, 27);
-            this.lblCodigoElim.Name = "lblCodigoElim";
-            this.lblCodigoElim.Size = new System.Drawing.Size(54, 16);
-            this.lblCodigoElim.TabIndex = 8;
-            this.lblCodigoElim.Text = "Código:";
-            // 
-            // cmbEliminar
-            // 
-            this.cmbEliminar.FormattingEnabled = true;
-            this.cmbEliminar.Location = new System.Drawing.Point(79, 27);
-            this.cmbEliminar.Name = "cmbEliminar";
-            this.cmbEliminar.Size = new System.Drawing.Size(121, 24);
-            this.cmbEliminar.TabIndex = 9;
-            // 
-            // optAsc
-            // 
-            this.optAsc.AutoSize = true;
-            this.optAsc.Location = new System.Drawing.Point(22, 18);
-            this.optAsc.Name = "optAsc";
-            this.optAsc.Size = new System.Drawing.Size(100, 20);
-            this.optAsc.TabIndex = 0;
-            this.optAsc.TabStop = true;
-            this.optAsc.Text = "Ascendente";
-            this.optAsc.UseVisualStyleBackColor = true;
-            // 
-            // optDesc
-            // 
-            this.optDesc.AutoSize = true;
-            this.optDesc.Location = new System.Drawing.Point(22, 40);
-            this.optDesc.Name = "optDesc";
-            this.optDesc.Size = new System.Drawing.Size(109, 20);
-            this.optDesc.TabIndex = 1;
-            this.optDesc.TabStop = true;
-            this.optDesc.Text = "Descendente";
-            this.optDesc.UseVisualStyleBackColor = true;
-            // 
-            // lstLista
-            // 
-            this.lstLista.FormattingEnabled = true;
-            this.lstLista.ItemHeight = 16;
-            this.lstLista.Location = new System.Drawing.Point(7, 22);
-            this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(236, 276);
-            this.lstLista.TabIndex = 0;
-            // 
             // dgvListaDoble
             // 
             this.dgvListaDoble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -251,6 +245,7 @@
             this.Codigo.HeaderText = "Código";
             this.Codigo.MinimumWidth = 6;
             this.Codigo.Name = "Codigo";
+            this.Codigo.Width = 125;
             // 
             // Nombre
             // 
@@ -265,6 +260,15 @@
             this.Tramite.MinimumWidth = 6;
             this.Tramite.Name = "Tramite";
             this.Tramite.Width = 125;
+            // 
+            // lstLista
+            // 
+            this.lstLista.FormattingEnabled = true;
+            this.lstLista.ItemHeight = 16;
+            this.lstLista.Location = new System.Drawing.Point(7, 22);
+            this.lstLista.Name = "lstLista";
+            this.lstLista.Size = new System.Drawing.Size(236, 276);
+            this.lstLista.TabIndex = 0;
             // 
             // frmListaDoble
             // 

@@ -133,6 +133,7 @@
             // 
             // cmbEliminar
             // 
+            this.cmbEliminar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEliminar.FormattingEnabled = true;
             this.cmbEliminar.Location = new System.Drawing.Point(79, 27);
             this.cmbEliminar.Name = "cmbEliminar";

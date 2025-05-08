@@ -25,6 +25,30 @@ namespace PryEdMarkoja
             get { return ulti; }
             set { ulti = value; }
         }
+        public void Agregar()
+        {
+            StreamReader AD = new StreamReader("ListaDoble.csv");
+            String dato = "";
+            dato = AD.ReadLine();
+            dato = AD.ReadLine();
+            dato = AD.ReadLine();
+            dato = AD.ReadLine();
+            while (dato != null)
+            {
+                clsNodo nodo = new clsNodo();
+
+                String[] datos = dato.Split(';');
+
+                nodo.Codigo = Convert.ToInt32(datos[0]);
+                nodo.Nombre = datos[1];
+                nodo.Tramite = datos[2];
+
+                Agregar(nodo);
+                dato = AD.ReadLine();
+            }
+
+            AD.Close();
+        }
         public void Agregar(clsNodo Nuevo)
         {
             if (Primero == null)

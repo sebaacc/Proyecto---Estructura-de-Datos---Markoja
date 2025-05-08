@@ -30,17 +30,96 @@ namespace PryEdMarkoja
             else
             {
                 clsNodo aux = new clsNodo();
-                aux.Codigo = Convert.ToInt32(txtCodigo);
+                aux.Codigo = Convert.ToInt32(txtCodigo.Text);
                 aux.Nombre = txtNombre.Text;
                 aux.Tramite = txtTramite.Text;
                 Arbol.Agregar(aux);
             }
-            Arbol.Recorrer(tvArbol);
+            LosRecorrer();
+            limpiarTodo();
         }
 
         private void frmArbolBinario_Load(object sender, EventArgs e)
         {
+            ValidarDatos();
+        }
+        private void LosRecorrer()
+        {
+            Arbol.Recorrer(tvArbol);
+            Arbol.Recorrer(cmbEliminar);
+            Arbol.Recorrer(dgvArbol);
+        }
+        private void limpiarTodo()
+        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+            cmbEliminar.Text = "";
+        }
 
+        private void btnEquilibrar_Click(object sender, EventArgs e)
+        {
+            Arbol.Equilibrar();
+            Arbol.Recorrer(tvArbol);
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Arbol.Eliminar(Convert.ToInt32(cmbEliminar.Text));
+            LosRecorrer();
+        }
+        private void ValidarDatos()
+        {
+            if (string.IsNullOrWhiteSpace(txtCodigo.Text) || string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtTramite.Text))
+            {
+                btnAgregar.Enabled = false;
+            }
+            else
+            {
+                btnAgregar.Enabled = true;
+            }
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void optInOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            Arbol.Recorrer(dgvArbol);
+        }
+
+        private void optPreOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            Arbol.RecorrerPre(dgvArbol);
+        }
+
+        private void optPostOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            Arbol.RecorrerPost(dgvArbol);
+        }
+
+        private void cmbEliminar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbEliminar.SelectedIndex != -1)
+            {
+                btnEliminar.Enabled = true;
+            }
+            else
+            {
+                btnEliminar.Enabled = false;
+            }
         }
     }
 }
