@@ -221,6 +221,7 @@
             this.grafosToolStripMenuItem1.Name = "grafosToolStripMenuItem1";
             this.grafosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.grafosToolStripMenuItem1.Text = "Grafos...";
+            this.grafosToolStripMenuItem1.Click += new System.EventHandler(this.grafosToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem5
             // 

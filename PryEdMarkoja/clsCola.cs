@@ -17,7 +17,7 @@ namespace PryEdMarkoja
 
         public clsNodo Primero
         {
-            get {  return pri; }
+            get { return pri; }
             set { pri = value; }
         }
 
@@ -29,7 +29,7 @@ namespace PryEdMarkoja
 
         public void Agregar(clsNodo Nuevo)
         {
-            if(Primero == null)
+            if (Primero == null)
             {
                 Primero = Nuevo;
                 Ultimo = Nuevo;
@@ -61,8 +61,6 @@ namespace PryEdMarkoja
                 Agregar(persona);
                 dato = AD.ReadLine();
             }
-            
-            
             AD.Close();
         }
         public void Eliminar()

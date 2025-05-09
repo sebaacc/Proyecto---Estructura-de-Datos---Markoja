@@ -59,7 +59,7 @@ namespace PryEdMarkoja
 
         private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void temaClaroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -100,6 +100,12 @@ namespace PryEdMarkoja
         private void árbolesBinariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmArbolBinario v = new frmArbolBinario();
+            v.ShowDialog();
+        }
+
+        private void grafosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmGrafo v = new frmGrafo();
             v.ShowDialog();
         }
     }

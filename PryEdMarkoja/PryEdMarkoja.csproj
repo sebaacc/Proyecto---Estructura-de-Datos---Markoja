@@ -56,6 +56,7 @@
     <Compile Include="clsArbolBinario.cs" />
     <Compile Include="clsArchivo.cs" />
     <Compile Include="clsCola.cs" />
+    <Compile Include="clsGrafoMatricial.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="Estilos\clsCustomUI.cs" />
@@ -76,6 +77,12 @@
     </Compile>
     <Compile Include="frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrafo.Designer.cs">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListaDoble.cs">
       <SubType>Form</SubType>
@@ -126,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrafo.resx">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaDoble.resx">
       <DependentUpon>frmListaDoble.cs</DependentUpon>
