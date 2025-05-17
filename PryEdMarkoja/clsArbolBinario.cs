@@ -171,7 +171,7 @@ namespace PryEdMarkoja
 
 
         private void PreOrden(clsNodo R, TreeNode nodoTreeView)
-        {
+        {   
             TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
             nodoTreeView.Nodes.Add(NodoPadre);
             if (R.Izquierdo != null) PreOrden(R.Izquierdo, NodoPadre);

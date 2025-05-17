@@ -97,17 +97,17 @@ namespace PryEdMarkoja
 
         private void optInOrden_CheckedChanged(object sender, EventArgs e)
         {
-            Arbol.Recorrer(dgvArbol);
+            if(cmbEliminar.Items.Count > 0) Arbol.Recorrer(dgvArbol);
         }
 
         private void optPreOrden_CheckedChanged(object sender, EventArgs e)
         {
-            Arbol.RecorrerPre(dgvArbol);
+            if (cmbEliminar.Items.Count > 0) Arbol.RecorrerPre(dgvArbol);
         }
 
         private void optPostOrden_CheckedChanged(object sender, EventArgs e)
         {
-            Arbol.RecorrerPost(dgvArbol);
+            if (cmbEliminar.Items.Count > 0) Arbol.RecorrerPost(dgvArbol);
         }
 
         private void cmbEliminar_SelectedIndexChanged(object sender, EventArgs e)

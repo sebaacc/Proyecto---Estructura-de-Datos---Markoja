@@ -95,3 +95,4 @@ D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\Pr
 D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.csproj.CoreCompileInputs.cache
 D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.exe
 D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.pdb
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmGrafo.resources

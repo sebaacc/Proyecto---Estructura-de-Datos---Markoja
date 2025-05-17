@@ -32,7 +32,8 @@ namespace PryEdMarkoja
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            Application.Exit();
         }
 
         private void ciudadesToolStripMenuItem_Click(object sender, EventArgs e)

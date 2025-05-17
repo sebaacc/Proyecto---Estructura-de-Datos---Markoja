@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PryEdMarkoja
@@ -26,24 +22,7 @@ namespace PryEdMarkoja
         {
             return Precio[f, c];
         }
-        public void MostrarDestino(Int32 f, DataGridView Grilla)
-        {
-            Grilla.Columns.Clear();
-            Grilla.Rows.Clear();
-            Grilla.Columns.Add("Col1", "Destino");
-            Grilla.Columns.Add("Col2", "Precio");
-            Grilla.Columns[0].Width = 200;
-            Grilla.Columns[1].Width = 200;
 
-            for (Int32 c = 0; c < Ciudades.Length; c++)
-            {
-                if (Precio[f, c] > 0)
-                {
-                    Grilla.Rows.Add(Ciudades[c], Precio[f, c]);
-                }
-            }
-
-        }
         public void BorrarTodo()
         {
             for (Int32 f = 0; f < Ciudades.Length; f++)
@@ -81,6 +60,48 @@ namespace PryEdMarkoja
             for (int i = 0; i < Ciudades.Length; i++)
             {
                 combo.Items.Add(Ciudades[i]);
+            }
+        }
+        public void MostrarCiudades(ComboBox cmb)
+        {
+            cmb.Items.Clear();
+            cmb.Items.AddRange(Ciudades);
+        }
+        public void MostrarDestinos(Int32 f, DataGridView Grilla)
+        {
+            Grilla.Columns.Clear();
+            Grilla.Rows.Clear();
+            Grilla.Columns.Add("Col1", "Destino");
+            Grilla.Columns.Add("Col2", "Precio");
+            Grilla.Columns[0].Width = 200;
+            Grilla.Columns[1].Width = 200;
+
+            for (Int32 c = 0; c < Ciudades.Length; c++)
+            {
+                if (Precio[f, c] > 0)
+                {
+                    Grilla.Rows.Add(Ciudades[c], Precio[f, c]);
+                }
+            }
+
+        }
+        public void MostrarOrigenes(Int32 c, DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            Grilla.Columns.Clear();
+
+            // Agregar columnas manualmente
+            Grilla.Columns.Add("Col1", "Origen");
+            Grilla.Columns.Add("Col2", "Precio");
+            Grilla.Columns[0].Width = 200;
+            Grilla.Columns[1].Width = 200;
+
+            for (Int32 f = 0; f < 5; f++)
+            {
+                if (Precio[f, c] > 0)
+                {
+                    Grilla.Rows.Add(Ciudades[f], Precio[f, c]);
+                }
             }
         }
     }
