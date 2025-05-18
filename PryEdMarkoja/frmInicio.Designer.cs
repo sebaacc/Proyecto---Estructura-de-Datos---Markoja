@@ -53,16 +53,16 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
             this.tablasHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.msMenu = new System.Windows.Forms.MenuStrip();
-            this.aspectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.temaClaroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.temaOscuroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaDeUnaTablaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.consultaDeBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.operacionesEnBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msMenu = new System.Windows.Forms.MenuStrip();
+            this.aspectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaClaroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaOscuroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -253,6 +253,42 @@
             this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.baseDeDatosToolStripMenuItem.Text = "Base de Datos";
             // 
+            // consultaDeUnaTablaToolStripMenuItem
+            // 
+            this.consultaDeUnaTablaToolStripMenuItem.Name = "consultaDeUnaTablaToolStripMenuItem";
+            this.consultaDeUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.consultaDeUnaTablaToolStripMenuItem.Text = "Consulta de una tabla...";
+            this.consultaDeUnaTablaToolStripMenuItem.Click += new System.EventHandler(this.consultaDeUnaTablaToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(316, 6);
+            // 
+            // consultaDeBaseDeDatosToolStripMenuItem
+            // 
+            this.consultaDeBaseDeDatosToolStripMenuItem.Name = "consultaDeBaseDeDatosToolStripMenuItem";
+            this.consultaDeBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.consultaDeBaseDeDatosToolStripMenuItem.Text = "Consulta de base de datos...";
+            this.consultaDeBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.consultaDeBaseDeDatosToolStripMenuItem_Click);
+            // 
+            // operacionesEnBaseDeDatosToolStripMenuItem
+            // 
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Name = "operacionesEnBaseDeDatosToolStripMenuItem";
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Text = "Operaciones en base de datos...";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(316, 6);
+            // 
+            // consultasVariasConOperacionesToolStripMenuItem
+            // 
+            this.consultasVariasConOperacionesToolStripMenuItem.Name = "consultasVariasConOperacionesToolStripMenuItem";
+            this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas varias con operaciones...";
+            // 
             // msMenu
             // 
             this.msMenu.GripMargin = new System.Windows.Forms.Padding(2);
@@ -295,41 +331,6 @@
             this.temaOscuroToolStripMenuItem.Text = "Tema Oscuro";
             this.temaOscuroToolStripMenuItem.Click += new System.EventHandler(this.temaOscuroToolStripMenuItem_Click);
             // 
-            // consultaDeUnaTablaToolStripMenuItem
-            // 
-            this.consultaDeUnaTablaToolStripMenuItem.Name = "consultaDeUnaTablaToolStripMenuItem";
-            this.consultaDeUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
-            this.consultaDeUnaTablaToolStripMenuItem.Text = "Consulta de una tabla...";
-            this.consultaDeUnaTablaToolStripMenuItem.Click += new System.EventHandler(this.consultaDeUnaTablaToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(316, 6);
-            // 
-            // consultaDeBaseDeDatosToolStripMenuItem
-            // 
-            this.consultaDeBaseDeDatosToolStripMenuItem.Name = "consultaDeBaseDeDatosToolStripMenuItem";
-            this.consultaDeBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
-            this.consultaDeBaseDeDatosToolStripMenuItem.Text = "Consulta de base de datos...";
-            // 
-            // operacionesEnBaseDeDatosToolStripMenuItem
-            // 
-            this.operacionesEnBaseDeDatosToolStripMenuItem.Name = "operacionesEnBaseDeDatosToolStripMenuItem";
-            this.operacionesEnBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
-            this.operacionesEnBaseDeDatosToolStripMenuItem.Text = "Operaciones en base de datos...";
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(316, 6);
-            // 
-            // consultasVariasConOperacionesToolStripMenuItem
-            // 
-            this.consultasVariasConOperacionesToolStripMenuItem.Name = "consultasVariasConOperacionesToolStripMenuItem";
-            this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
-            this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas varias con operaciones...";
-            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,7 +338,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.msMenu);
             this.MainMenuStrip = this.msMenu;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInicio";
             this.Text = "Estructuras de Datos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

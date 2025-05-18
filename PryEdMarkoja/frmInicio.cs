@@ -115,5 +115,11 @@ namespace PryEdMarkoja
             frmBaseDatosMostrarTabla v = new frmBaseDatosMostrarTabla();
             v.ShowDialog();
         }
+
+        private void consultaDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaseDatosConsultasSQL v = new frmBaseDatosConsultasSQL();
+            v.ShowDialog();
+        }
     }
 }
