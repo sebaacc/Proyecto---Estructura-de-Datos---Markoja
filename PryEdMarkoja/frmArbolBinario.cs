@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PryEdMarkoja.Estilos;
 
 namespace PryEdMarkoja
 {
@@ -16,6 +17,7 @@ namespace PryEdMarkoja
         public frmArbolBinario()
         {
             InitializeComponent();
+            clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
         clsArbolBinario Arbol = new clsArbolBinario();
         clsArchivo x = new clsArchivo();

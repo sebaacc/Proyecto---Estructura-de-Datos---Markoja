@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PryEdMarkoja.Estilos;
 
 namespace PryEdMarkoja
 {
@@ -16,6 +17,7 @@ namespace PryEdMarkoja
         public frmGrafo()
         {
             InitializeComponent();
+            clsCustomUI.CargarEstilos(this, TemaActual.TemaSeleccionado);
         }
 
         private void frmGrafo_Load(object sender, EventArgs e)
