@@ -29,6 +29,17 @@ namespace PryEdMarkoja
             grafo.MostrarTodo(dgvGrafo);
         }
 
-
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Int32 x = cmbOrigenCarga.SelectedIndex;
+            Int32 y = cmbDestinoCarga.SelectedIndex;
+            Decimal p = Convert.ToDecimal(txtPrecio.Text);
+            grafo.Agregar(x, y, p);
+            grafo.MostrarTodo(dgvGrafo);
+            MessageBox.Show("Precio Cargado!!!");
+            txtPrecio.Text = "";
+            cmbOrigenCarga.SelectedIndex = 0;
+            cmbDestinoCarga.SelectedIndex = 0;
+        }
     }
 }

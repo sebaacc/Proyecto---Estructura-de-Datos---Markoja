@@ -109,5 +109,11 @@ namespace PryEdMarkoja
             frmGrafo v = new frmGrafo();
             v.ShowDialog();
         }
+
+        private void consultaDeUnaTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaseDatosMostrarTabla v = new frmBaseDatosMostrarTabla();
+            v.ShowDialog();
+        }
     }
 }

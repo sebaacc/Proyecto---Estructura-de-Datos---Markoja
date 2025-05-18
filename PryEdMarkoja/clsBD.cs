@@ -7,7 +7,7 @@ namespace PryEdMarkoja
 {
     public class clsBD
     {
-        private String CadenaConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Libreria.mdb";
+        private String CadenaConexion = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\BBDD\Libreria.mdb";
         private String CadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
 
         private OleDbConnection conexion = new OleDbConnection();
