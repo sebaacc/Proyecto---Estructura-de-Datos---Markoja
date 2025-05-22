@@ -13,6 +13,7 @@ namespace PryEdMarkoja
 {
     public partial class frmBaseDatosOperaciones : Form
     {
+        clsBD BD = new clsBD();
         public frmBaseDatosOperaciones()
         {
             InitializeComponent(); 
@@ -22,6 +23,20 @@ namespace PryEdMarkoja
         private void frmBaseDatosOperaciones_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPSimple_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT titulo " +
+                "FROM Libro";
+            BD.Consultar(SQL, dgvResultado);
+        }
+
+        private void btnPMulti_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT * " +
+                "FROM Libro";
+            BD.Consultar(SQL, dgvResultado);
         }
     }
 }

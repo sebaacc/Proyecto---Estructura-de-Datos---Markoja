@@ -101,3 +101,7 @@ D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEd
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.exe.config
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosOperaciones.resources
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\estructuras\ProyectoCursada\PryEdMarkoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosRepasoOperaciones.resources
+D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosConsultasSQL.resources
+D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosMostrarTabla.resources
+D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosOperaciones.resources
+D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosRepasoOperaciones.resources
