@@ -38,5 +38,37 @@ namespace PryEdMarkoja
                 "FROM Libro";
             BD.Consultar(SQL, dgvResultado);
         }
+
+        private void btnPJuntar_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT Libro.Titulo, Idioma.Nombre " +
+                "FROM Libro " +
+                "INNER JOIN Idioma ON Libro.IdIdioma = Idioma.IdIdioma";
+            BD.Consultar(SQL, dgvResultado);
+        }
+
+        private void btnSSimple_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT * " +
+               "FROM Libro " +
+               "WHERE IdPais > 5 ";
+            BD.Consultar(SQL, dgvResultado);
+        }
+
+        private void btnSMulti_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT * FROM " +
+                "(SELECT * FROM Libro as T1 WHERE T1.IdAutor > 10) " +
+                "AS T2 WHERE T2.IdAutor < 20";
+            BD.Consultar(SQL, dgvResultado);
+        }
+
+        private void btnSConvol_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT * FROM Libro " +
+                "WHERE IdAutor = 8 " +
+                "AND precio < 150";
+            BD.Consultar(SQL, dgvResultado);
+        }
     }
 }
