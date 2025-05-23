@@ -70,5 +70,29 @@ namespace PryEdMarkoja
                 "AND precio < 150";
             BD.Consultar(SQL, dgvResultado);
         }
+
+        private void btnUnion_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT * FROM Libro " +
+                "WHERE IdAutor = 9 " +
+                "UNION SELECT * FROM Libro " +
+                "WHERE IdAutor =  83";
+            BD.Consultar(SQL, dgvResultado);
+        }
+
+        private void btnInterseccion_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT * FROM Libro WHERE IdAutor > 50 AND IdLibro IN (SELECT IdLibro FROM Libro WHERE IdIdioma > 7);";
+            BD.Consultar(SQL, dgvResultado);
+        }
+
+        private void btnDiferencia_Click(object sender, EventArgs e)
+        {
+            String SQL = "SELECT * FROM Libro " +
+                "WHERE IdPais NOT IN " +
+                "(SELECT DISTINCT IdPais FROM Libro " +
+                "WHERE IdPais > 10)";
+            BD.Consultar(SQL, dgvResultado);
+        }
     }
 }

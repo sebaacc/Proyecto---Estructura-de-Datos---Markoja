@@ -105,3 +105,7 @@ D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\Pr
 D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosMostrarTabla.resources
 D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosOperaciones.resources
 D:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosRepasoOperaciones.resources
+E:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosConsultasSQL.resources
+E:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosMostrarTabla.resources
+E:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosOperaciones.resources
+E:\Escritorio\Proyecto---Estructura-de-Datos---Markoja\PryEdMarkoja\obj\Debug\PryEdMarkoja.frmBaseDatosRepasoOperaciones.resources
