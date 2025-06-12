@@ -31,71 +31,87 @@
             this.btnListar = new System.Windows.Forms.Button();
             this.cmbOperacion = new System.Windows.Forms.ComboBox();
             this.lblOperaciones = new System.Windows.Forms.Label();
-            this.txtOperacionResultado = new System.Windows.Forms.TextBox();
+            this.txtOperacionDescripcion = new System.Windows.Forms.TextBox();
             this.dgvOperaciones = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOperaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(1085, 26);
+            this.btnListar.Location = new System.Drawing.Point(814, 21);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(103, 25);
+            this.btnListar.Size = new System.Drawing.Size(77, 21);
             this.btnListar.TabIndex = 0;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // cmbOperacion
             // 
             this.cmbOperacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOperacion.FormattingEnabled = true;
-            this.cmbOperacion.Location = new System.Drawing.Point(507, 26);
+            this.cmbOperacion.Location = new System.Drawing.Point(380, 21);
+            this.cmbOperacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbOperacion.Name = "cmbOperacion";
-            this.cmbOperacion.Size = new System.Drawing.Size(524, 24);
+            this.cmbOperacion.Size = new System.Drawing.Size(394, 21);
             this.cmbOperacion.TabIndex = 1;
+            this.cmbOperacion.SelectedIndexChanged += new System.EventHandler(this.cmbOperacion_SelectedIndexChanged);
             // 
             // lblOperaciones
             // 
             this.lblOperaciones.AutoSize = true;
             this.lblOperaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOperaciones.Location = new System.Drawing.Point(68, 26);
+            this.lblOperaciones.Location = new System.Drawing.Point(51, 21);
+            this.lblOperaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOperaciones.Name = "lblOperaciones";
-            this.lblOperaciones.Size = new System.Drawing.Size(368, 25);
+            this.lblOperaciones.Size = new System.Drawing.Size(297, 20);
             this.lblOperaciones.TabIndex = 2;
             this.lblOperaciones.Text = "Operación a realizar en la base de datos:";
             // 
-            // txtOperacionResultado
+            // txtOperacionDescripcion
             // 
-            this.txtOperacionResultado.Location = new System.Drawing.Point(73, 73);
-            this.txtOperacionResultado.Multiline = true;
-            this.txtOperacionResultado.Name = "txtOperacionResultado";
-            this.txtOperacionResultado.ReadOnly = true;
-            this.txtOperacionResultado.Size = new System.Drawing.Size(1115, 162);
-            this.txtOperacionResultado.TabIndex = 3;
+            this.txtOperacionDescripcion.Enabled = false;
+            this.txtOperacionDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOperacionDescripcion.Location = new System.Drawing.Point(55, 59);
+            this.txtOperacionDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOperacionDescripcion.Multiline = true;
+            this.txtOperacionDescripcion.Name = "txtOperacionDescripcion";
+            this.txtOperacionDescripcion.ReadOnly = true;
+            this.txtOperacionDescripcion.Size = new System.Drawing.Size(837, 132);
+            this.txtOperacionDescripcion.TabIndex = 3;
             // 
             // dgvOperaciones
             // 
             this.dgvOperaciones.AllowUserToAddRows = false;
             this.dgvOperaciones.AllowUserToDeleteRows = false;
+            this.dgvOperaciones.AllowUserToResizeColumns = false;
+            this.dgvOperaciones.AllowUserToResizeRows = false;
+            this.dgvOperaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvOperaciones.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvOperaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOperaciones.Location = new System.Drawing.Point(73, 260);
+            this.dgvOperaciones.Location = new System.Drawing.Point(55, 211);
+            this.dgvOperaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvOperaciones.MultiSelect = false;
             this.dgvOperaciones.Name = "dgvOperaciones";
             this.dgvOperaciones.ReadOnly = true;
+            this.dgvOperaciones.RowHeadersVisible = false;
             this.dgvOperaciones.RowHeadersWidth = 51;
             this.dgvOperaciones.RowTemplate.Height = 24;
-            this.dgvOperaciones.Size = new System.Drawing.Size(1115, 397);
+            this.dgvOperaciones.Size = new System.Drawing.Size(836, 323);
             this.dgvOperaciones.TabIndex = 4;
             // 
             // frmBaseDatosRepasoOperaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 726);
+            this.ClientSize = new System.Drawing.Size(944, 590);
             this.Controls.Add(this.dgvOperaciones);
-            this.Controls.Add(this.txtOperacionResultado);
+            this.Controls.Add(this.txtOperacionDescripcion);
             this.Controls.Add(this.lblOperaciones);
             this.Controls.Add(this.cmbOperacion);
             this.Controls.Add(this.btnListar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmBaseDatosRepasoOperaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Repaso de operaciones de base de datos";
@@ -111,7 +127,7 @@
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.ComboBox cmbOperacion;
         private System.Windows.Forms.Label lblOperaciones;
-        private System.Windows.Forms.TextBox txtOperacionResultado;
+        private System.Windows.Forms.TextBox txtOperacionDescripcion;
         private System.Windows.Forms.DataGridView dgvOperaciones;
     }
 }
