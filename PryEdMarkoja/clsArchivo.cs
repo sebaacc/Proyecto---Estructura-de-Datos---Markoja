@@ -64,54 +64,5 @@ namespace PryEdMarkoja
             }
             AD.Close();
         }
-        //public void Recorrer(TreeView treeView)
-        //{
-        //    StreamReader AD = new StreamReader(nombreArchivo);
-        //    Dictionary<string, TreeNode> nodos = new Dictionary<string, TreeNode>();
-        //    string dato = AD.ReadLine();
-        //    treeView.Nodes.Clear();
-
-        //    while (dato != null)
-        //    {
-        //        string[] valores = dato.Split(';');
-        //        if (valores.Length >= 1)
-        //        {
-        //            string valor = valores[0];
-        //            string izquierdo = valores.Length > 1 ? valores[1] : null;
-        //            string derecho = valores.Length > 2 ? valores[2] : null;
-
-        //            if (!nodos.ContainsKey(valor))
-        //                nodos[valor] = new TreeNode(valor);
-
-        //            TreeNode nodoPadre = nodos[valor];
-
-        //            if (!string.IsNullOrEmpty(izquierdo))
-        //            {
-        //                TreeNode nodoIzq = new TreeNode(izquierdo);
-        //                nodos[izquierdo] = nodoIzq;
-        //                nodoPadre.Nodes.Add(nodoIzq);
-        //            }
-
-        //            if (!string.IsNullOrEmpty(derecho))
-        //            {
-        //                TreeNode nodoDer = new TreeNode(derecho);
-        //                nodos[derecho] = nodoDer;
-        //                nodoPadre.Nodes.Add(nodoDer);
-        //            }
-        //        }
-
-        //        dato = AD.ReadLine();
-        //    }
-
-        //    AD.Close();
-
-        //    if (nodos.Count > 0)
-        //    {
-        //        string raiz = nodos.Keys.First();
-        //        treeView.Nodes.Add(nodos[raiz]);
-        //    }
-
-        //    treeView.ExpandAll();
-        //}
     }
 }

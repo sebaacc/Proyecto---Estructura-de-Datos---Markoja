@@ -113,51 +113,54 @@
             // ciudadesToolStripMenuItem
             // 
             this.ciudadesToolStripMenuItem.Name = "ciudadesToolStripMenuItem";
-            this.ciudadesToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.ciudadesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.ciudadesToolStripMenuItem.Text = "Ciudades...";
             this.ciudadesToolStripMenuItem.Click += new System.EventHandler(this.ciudadesToolStripMenuItem_Click);
             // 
             // provinciasToolStripMenuItem
             // 
             this.provinciasToolStripMenuItem.Name = "provinciasToolStripMenuItem";
-            this.provinciasToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.provinciasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.provinciasToolStripMenuItem.Text = "Provincias...";
             this.provinciasToolStripMenuItem.Click += new System.EventHandler(this.provinciasToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(164, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(221, 6);
             // 
             // mesesToolStripMenuItem
             // 
             this.mesesToolStripMenuItem.Name = "mesesToolStripMenuItem";
-            this.mesesToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.mesesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.mesesToolStripMenuItem.Text = "Meses...";
             this.mesesToolStripMenuItem.Click += new System.EventHandler(this.mesesToolStripMenuItem_Click);
             // 
             // díasToolStripMenuItem
             // 
             this.díasToolStripMenuItem.Name = "díasToolStripMenuItem";
-            this.díasToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.díasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.díasToolStripMenuItem.Text = "Días...";
+            this.díasToolStripMenuItem.Click += new System.EventHandler(this.díasToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(164, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(221, 6);
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.materiasToolStripMenuItem.Text = "Materias...";
+            this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
             // 
             // carrerasToolStripMenuItem
             // 
             this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
-            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.carrerasToolStripMenuItem.Text = "Carreras...";
+            this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
             // 
             // estructurasLinealesToolStripMenuItem
             // 

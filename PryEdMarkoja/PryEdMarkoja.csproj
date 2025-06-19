@@ -98,11 +98,23 @@
     <Compile Include="frmBaseDatosRepasoOperaciones.Designer.cs">
       <DependentUpon>frmBaseDatosRepasoOperaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPooCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPooCarrera.Designer.cs">
+      <DependentUpon>frmPooCarrera.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPooDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPooDia.Designer.cs">
+      <DependentUpon>frmPooDia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGrafo.cs">
       <SubType>Form</SubType>
@@ -121,6 +133,18 @@
     </Compile>
     <Compile Include="frmListaSimple.Designer.cs">
       <DependentUpon>frmListaSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPooMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPooMateria.Designer.cs">
+      <DependentUpon>frmPooMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPooMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPooMes.Designer.cs">
+      <DependentUpon>frmPooMes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPila.cs">
       <SubType>Form</SubType>
@@ -169,8 +193,14 @@
     <EmbeddedResource Include="frmBaseDatosRepasoOperaciones.resx">
       <DependentUpon>frmBaseDatosRepasoOperaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPooCarrera.resx">
+      <DependentUpon>frmPooCarrera.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPooDia.resx">
+      <DependentUpon>frmPooDia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGrafo.resx">
       <DependentUpon>frmGrafo.cs</DependentUpon>
@@ -180,6 +210,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaSimple.resx">
       <DependentUpon>frmListaSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPooMateria.resx">
+      <DependentUpon>frmPooMateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPooMes.resx">
+      <DependentUpon>frmPooMes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPila.resx">
       <DependentUpon>frmPila.cs</DependentUpon>

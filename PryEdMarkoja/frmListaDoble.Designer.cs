@@ -43,7 +43,7 @@
             this.gbListarDatos = new System.Windows.Forms.GroupBox();
             this.optDesc = new System.Windows.Forms.RadioButton();
             this.optAsc = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ImgListaDoble = new System.Windows.Forms.PictureBox();
             this.gbListadoYGrilla = new System.Windows.Forms.GroupBox();
             this.dgvListaDoble = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,7 @@
             this.gbNuevoElemento.SuspendLayout();
             this.gbElementoEliminar.SuspendLayout();
             this.gbListarDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgListaDoble)).BeginInit();
             this.gbListadoYGrilla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).BeginInit();
             this.SuspendLayout();
@@ -193,6 +193,7 @@
             this.optDesc.TabStop = true;
             this.optDesc.Text = "Descendente";
             this.optDesc.UseVisualStyleBackColor = true;
+            this.optDesc.CheckedChanged += new System.EventHandler(this.optDesc_CheckedChanged);
             // 
             // optAsc
             // 
@@ -204,16 +205,17 @@
             this.optAsc.TabStop = true;
             this.optAsc.Text = "Ascendente";
             this.optAsc.UseVisualStyleBackColor = true;
+            this.optAsc.CheckedChanged += new System.EventHandler(this.optAsc_CheckedChanged);
             // 
-            // pictureBox1
+            // ImgListaDoble
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(38, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 185);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.ImgListaDoble.Location = new System.Drawing.Point(38, 25);
+            this.ImgListaDoble.Margin = new System.Windows.Forms.Padding(4);
+            this.ImgListaDoble.Name = "ImgListaDoble";
+            this.ImgListaDoble.Size = new System.Drawing.Size(243, 185);
+            this.ImgListaDoble.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImgListaDoble.TabIndex = 15;
+            this.ImgListaDoble.TabStop = false;
             // 
             // gbListadoYGrilla
             // 
@@ -276,7 +278,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 562);
             this.Controls.Add(this.gbListadoYGrilla);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ImgListaDoble);
             this.Controls.Add(this.gbListarDatos);
             this.Controls.Add(this.gbElementoEliminar);
             this.Controls.Add(this.gbNuevoElemento);
@@ -290,7 +292,7 @@
             this.gbElementoEliminar.PerformLayout();
             this.gbListarDatos.ResumeLayout(false);
             this.gbListarDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgListaDoble)).EndInit();
             this.gbListadoYGrilla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).EndInit();
             this.ResumeLayout(false);
@@ -302,7 +304,7 @@
         private System.Windows.Forms.GroupBox gbNuevoElemento;
         private System.Windows.Forms.GroupBox gbElementoEliminar;
         private System.Windows.Forms.GroupBox gbListarDatos;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ImgListaDoble;
         private System.Windows.Forms.GroupBox gbListadoYGrilla;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtTramite;

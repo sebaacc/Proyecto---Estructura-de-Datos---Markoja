@@ -56,34 +56,43 @@ namespace PryEdMarkoja
                 Primero = Nuevo;
                 Ultimo = Nuevo;
             }
-            else { 
-                if(Nuevo.Codigo <= Primero.Codigo)
+            else
+            {
+                if (Nuevo.Codigo < Primero.Codigo)
                 {
-                    Primero.Anterior = Nuevo;
+
                     Nuevo.Siguiente = Primero;
+                    Primero.Anterior = Nuevo;
                     Primero = Nuevo;
-                } 
+
+                }
                 else
                 {
                     if (Nuevo.Codigo > Ultimo.Codigo)
                     {
+
                         Ultimo.Siguiente = Nuevo;
                         Nuevo.Anterior = Ultimo;
                         Ultimo = Nuevo;
+
+
                     }
                     else
                     {
-                        clsNodo Aux = Primero;
-                        clsNodo Ant = Primero;
-                        while (Aux.Codigo < Nuevo.Codigo)
+
+                        clsNodo ant = pri;
+                        clsNodo aux = pri;
+
+                        while (aux.Codigo < ant.Codigo)
                         {
-                            Ant = Aux;
-                            Aux = Aux.Siguiente;
+                            ant = aux;
+                            aux = aux.Siguiente;
                         }
-                        Ant.Siguiente = Nuevo;
-                        Nuevo.Siguiente = Aux;
-                        Aux.Anterior = Nuevo;
-                        Nuevo.Anterior = Ant;
+
+                        ant.Siguiente = Nuevo;
+                        Nuevo.Siguiente = aux;
+                        Nuevo.Anterior = ant;
+                        aux.Anterior = Nuevo;
                     }
                 }
             }
@@ -141,6 +150,44 @@ namespace PryEdMarkoja
                 Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
                 aux = aux.Anterior;
             }
+        }
+        public void RecorrerDesc(ListBox Lista)
+        {
+            clsNodo aux = Ultimo;
+            Lista.Items.Clear();
+            while (aux != null)
+            {
+                Lista.Items.Add(aux.Codigo);
+                aux = aux.Anterior;
+            }
+        }
+        public void RecorrerDesc(ComboBox Combo)
+        {
+            clsNodo aux = Ultimo;
+            Combo.Items.Clear();
+            while (aux != null)
+            {
+                Combo.Items.Add(aux.Codigo);
+                aux = aux.Anterior;
+            }
+        }
+        public void RecorrerDesc()
+        {
+            clsNodo aux = Ultimo;
+
+            StreamWriter AD = new StreamWriter("ListaDoble.csv", false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Codigo;Nombre;Tramite");
+            while (aux != null)
+            {
+                AD.Write(aux.Codigo);
+                AD.Write(";");
+                AD.Write(aux.Nombre);
+                AD.Write(";");
+                AD.WriteLine(aux.Tramite);
+                aux = aux.Anterior;
+            }
+            AD.Close();
         }
         public void Recorrer(ListBox Lista)
         {

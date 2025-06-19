@@ -59,7 +59,8 @@ namespace PryEdMarkoja
 
         private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmPooMes v = new frmPooMes();
+            v.ShowDialog();
         }
 
         private void temaClaroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -130,6 +131,24 @@ namespace PryEdMarkoja
         private void consultasVariasConOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBaseDatosRepasoOperaciones v = new frmBaseDatosRepasoOperaciones();
+            v.ShowDialog();
+        }
+
+        private void díasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPooDia v = new frmPooDia();
+            v.ShowDialog();
+        }
+
+        private void materiasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPooMateria v = new frmPooMateria();
+            v.ShowDialog();
+        }
+
+        private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPooCarrera v = new frmPooCarrera();
             v.ShowDialog();
         }
     }

@@ -24,11 +24,13 @@ namespace PryEdMarkoja
         private void frmListaDoble_Load(object sender, EventArgs e)
         {
             x.nombreArchivo = "ListaDoble.csv";
-            if (File.Exists(x.nombreArchivo)) x.Recorrer(dgvListaDoble);
+            if (File.Exists(x.nombreArchivo)) {
+                x.Recorrer(dgvListaDoble); 
+                ListaDoble.Agregar();
+                LosRecorrer();
+            } 
             else MessageBox.Show("Archivo no encontrado");
 
-            ListaDoble.Agregar();
-            LosRecorrer();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -76,6 +78,36 @@ namespace PryEdMarkoja
                 MessageBox.Show("No se ha seleccionado ningún valor a eliminar.");
             }
             limpiarTodo();
+        }
+
+        private void optAsc_CheckedChanged(object sender, EventArgs e)
+        {
+            optAscOrdenar();
+        }
+
+        private void optDesc_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        public void optAscOrdenar()
+        {
+            if (optAsc.Checked)
+            {
+                ListaDoble.Recorrer();
+                ListaDoble.Recorrer(dgvListaDoble); 
+                ListaDoble.Recorrer(lstLista);
+                ListaDoble.Recorrer(cmbEliminar);
+            }
+        }
+        public void optDescOrdenar()
+        {
+            if (optDesc.Checked)
+            {
+                ListaDoble.RecorrerDesc(); 
+                ListaDoble.RecorrerDesc(dgvListaDoble);
+                ListaDoble.RecorrerDesc(lstLista);
+                ListaDoble.RecorrerDesc(cmbEliminar);
+            }
         }
     }
 }
