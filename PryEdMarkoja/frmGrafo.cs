@@ -38,10 +38,34 @@ namespace PryEdMarkoja
             Decimal p = Convert.ToDecimal(txtPrecio.Text);
             grafo.Agregar(x, y, p);
             grafo.MostrarTodo(dgvGrafo);
-            MessageBox.Show("Precio Cargado!!!");
+            MessageBox.Show("Precio Cargado!");
             txtPrecio.Text = "";
             cmbOrigenCarga.SelectedIndex = 0;
             cmbDestinoCarga.SelectedIndex = 0;
+        }
+
+        private void btnConsultarViaje_Click(object sender, EventArgs e)
+        {
+            Int32 x = cmbOrigenCarga.SelectedIndex;
+            Int32 y = cmbDestinoCarga.SelectedIndex;
+            txtPrecioConsultado.Text = grafo.Consultar(x,y).ToString();
+        }
+
+        private void btnVerTodosLosViajes_Click(object sender, EventArgs e)
+        {
+            grafo.MostrarTodo(dgvGrafo);
+        }
+
+        private void btnListarOrigenes_Click(object sender, EventArgs e)
+        {
+            Int32 x = cmbOrigenListar.SelectedIndex;
+            grafo.MostrarOrigenes(x,dgvGrafo);
+        }
+
+        private void btnListarDestinos_Click(object sender, EventArgs e)
+        {
+            Int32 x = cmbDestinoListar.SelectedIndex;
+            grafo.MostrarDestinos(x, dgvGrafo);
         }
     }
 }
